@@ -1,0 +1,41 @@
+.custom-textfield input {
+    color: black !important;
+  }
+  
+  .custom-textfield .MuiInputBase-input {
+    color: black !important;
+  }
+  .custom-textfield .MuiInputBase-input {
+    color: black; /* Ensuring the text color remains dark even after saving */
+  }
+  
+  .custom-textfield .MuiInputBase-input {
+    color: black; /* Ensuring the text color remains dark even after saving */
+  }
+  
+  .custom-textfield .MuiInputBase-input.Mui-disabled {
+    -webkit-text-fill-color: black; /* Ensuring the text color remains dark even when disabled */
+    opacity: 1; /* Ensuring the text does not appear dull when disabled */
+  }
+
+  .custom-textfield .MuiInputBase-input {
+    color: black; /* Ensuring the text color remains dark even after saving */
+    font-size: 16px; /* Setting the font size to 18 */
+  }
+  
+  .custom-textfield .MuiInputBase-input.Mui-disabled {
+    -webkit-text-fill-color: black; /* Ensuring the text color remains dark even when disabled */
+    opacity: 1; /* Ensuring the text does not appear dull when disabled */
+  }
+  
+  .custom-textfield .MuiFormLabel-root {
+    color: black; /* Ensuring the label color remains dark */
+    font-size: 18px; /* Setting the label font size to 18 */
+  }
+  
+  .custom-textfield .MuiFormLabel-root.Mui-disabled {
+    color: black; /* Ensuring the label color remains dark even when disabled */
+    opacity: 1; /* Ensuring the label does not appear dull when disabled */
+  }
+  
+  

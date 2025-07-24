@@ -1,0 +1,163 @@
+
+
+.holidays-container {
+  padding: 20px;
+}
+ 
+.heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #3498db;
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px 10px 0 0;
+}
+ 
+.heading h1 {
+  margin: 0;
+  color: whitesmoke;
+}
+ 
+.heading p {
+  margin: 10px 0 0;
+}
+ 
+.heading-left {
+  flex-grow: 1;
+}
+ 
+.heading-right {
+  margin-left: 20px;
+}
+ 
+.styled-button {
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  display: flex;
+  align-items: center;
+}
+ 
+.styled-button:hover {
+  background-color: #218838;
+}
+ 
+.popup {
+  position: fixed;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  width: 400px;
+  margin-top: -40%;
+}
+ 
+.popup h2 {
+  margin-top: 0;
+  color: black;
+}
+ 
+.popup-content {
+  margin-bottom: 20px;
+  color: black;
+
+}
+ 
+.popup label {
+  display: block;
+  margin-bottom: 5px;
+  color: black;
+}
+ 
+.popup input,
+.popup textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+ 
+.popup-buttons {
+  text-align: right;
+}
+ 
+.popup-buttons button {
+  margin-left: 10px;
+}
+ 
+.submit-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+ 
+.cancel-button {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+ 
+.submit-button:hover, .cancel-button:hover {
+  filter: brightness(90%);
+}
+ 
+.success-message {
+  background-color: #28a745;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+ 
+/* Data grid styles */
+.holidays-list {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 0 0 10px 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+ 
+.data-grid {
+  border-collapse: collapse;
+  width: 100%;
+}
+ 
+.data-grid th,
+.data-grid td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
+ 
+.data-grid th {
+  background-color: #333;
+}
+.action-button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  margin: 5px;
+  font-size: large;
+}
+ 
+.action-button:hover {
+  transform: scale(1.2);
+}
+ 

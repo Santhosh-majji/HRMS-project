@@ -1,0 +1,106 @@
+.heading {
+    text-align: center;
+    margin-bottom: 0px;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 12px 0px 0px 0px; /* Adjust padding to decrease row height */
+    height: 55px;
+    align-items: center;
+    vertical-align: middle;
+}
+
+.heading li {
+    /* padding-top: 0px; */
+    list-style-type: none;
+
+}
+
+.ProjManage-content-container {
+    padding-top: 70px; 
+}
+
+.heading-active {
+    color: #1283ed;
+    position: relative; 
+    /* height: 35px; */
+    align-items: center;
+    
+
+}
+
+.heading-active::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 6px; /* Adjust as needed */
+    width: 0;
+    height: 1px;
+    background-color: #1283ed;
+    animation: underline 0.5s linear forwards; /* Adjust animation duration as needed */
+}
+
+@keyframes underline {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+  ol,
+    ul {
+      padding-left: 0; /* Override default padding */
+    }
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+ 
+  .row>* {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .col-2 {
+    flex: 0 0 auto;
+    width: 25.33333333%;
+  }
+  
+
+.heading   {
+    margin-bottom: 10px;
+    /* width: 95%; */
+    width: 123%;
+    word-break: break-word;
+    /* text-wrap: wrap; */
+}
+.ProjManage-content-container {
+  padding-top: 70px; 
+}
+}
+
+@media only screen and (max-width: 767px) {
+  
+  .row>* {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .col-2 {
+    flex: 0 0 auto;
+    width: 25.33333333%;
+  }
+  
+.heading   {
+    margin-bottom: 10px;
+    /* width: 95%; */
+    width: 110%;
+    word-break: break-word;
+    /* text-wrap: wrap; */
+    font-size: xx-small;
+}
+.ProjManage-content-container {
+  padding-top: 70px; 
+}
+
+}

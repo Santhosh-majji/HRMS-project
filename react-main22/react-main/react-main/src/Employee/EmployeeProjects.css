@@ -1,0 +1,101 @@
+.bar {
+  display: flex;
+  flex-direction: row;
+  align-items: center; /* Change to align-items: center */
+  background-color: #3498db;
+  color: #fff;
+  font-size: 1.8rem;
+  font-family: 'Arial', sans-serif;
+  width: 100%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: width 0.5s ease;
+  position: static;
+  margin: 0%;
+}
+
+.bar.active .items {
+  display: flex;
+justify-content: space-between;
+   /* Display navbar items when navbar is active */
+}
+
+.text {
+  text-decoration: none;
+  color: #fff;
+}
+
+.item {
+  cursor: pointer;
+  text-decoration: none;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Add transform transition */
+  font-size: 1.1rem; /* Increased font size */
+  font-family: 'Arial', sans-serif; /* Changed font family */
+  display: inline-block;
+}
+
+.item:hover {
+  background-color: #2980b9;
+  transform: scale(1.05); /* Add scaling effect on hover */
+  animation: colorChange 0.5s ease; /* Add color change animation on hover */
+}
+
+.toggle-button {
+  display: none; /* Hide toggle button by default */
+}
+
+@media (max-width: 768px) {
+  .bar {
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0%;
+   
+  }
+
+  .bar.active .items {
+    display: flex; /* Display navbar items when navbar is active */
+    margin-left: 0; /* Reset margin */
+  }
+
+  .toggle-button {
+    display: block;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    padding: 5px;
+    cursor: pointer;
+  }
+
+  .items {
+    display: none; /* Hide navbar items by default */
+    flex-direction: column;
+    width: 100%;
+    margin-left: 0; /* Reset margin */
+  }
+
+  .text {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .item {
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+  }
+
+  .item:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+    animation: colorChange 0.5s ease;
+  }
+}
+
+@keyframes colorChange {
+  0% {
+    color: #fff;
+  }
+}
+

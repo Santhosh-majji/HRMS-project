@@ -1,0 +1,198 @@
+.jobopenings-container {
+    padding: 5px;
+    display: flex;
+    width: 85%;
+    flex-direction: right;
+  }
+  
+  
+  
+  .card {
+    flex: 1 0 calc(25% - 20px);
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 50px 30px 20px -10px;
+    height: 90px;
+    width: 6vw;
+    color: rgb(77, 65, 65);
+   
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  
+  .charrt-container{
+    width: 300px;
+    height: 150px;
+    margin-left: 1px;
+    margin-bottom: 15px;
+  
+  }
+  .chart {
+    width: 130px;
+    height: 150px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  /* DashboardTable.css */
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  th, td {
+    padding: 8px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  tr:hover {
+    background-color: #ddd;
+  }
+  
+  .exportb {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  
+  .exportb:hover {
+    background-color: #0056b3;
+  }
+  
+  
+  .viewb{
+    padding: 5px 10px;
+    background-color: #0c4f10;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .viewb:hover {
+    background-color: #4f9b7f;
+  }
+  
+  
+  /* Jobopenings.css */
+  
+  select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 16px;
+    background-color: #fff;
+    color: #333;
+    cursor: pointer;
+  }
+  
+  option {
+    background-color: #fff;
+    color: #333;
+  }
+  
+  option:hover {
+    background-color: #f2f2f2;
+  }
+  
+  option:checked {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  /* Jobopenings.css */
+  
+  .table-container {
+    height: 300px; /* Adjust the height as needed */
+    overflow-y: auto;
+  }
+  
+  select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 16px;
+    background-color: #fff;
+    color: #333;
+    cursor: pointer;
+  }
+  
+  option {
+    background-color: #fff;
+    color: #333;
+  }
+  
+  option:hover {
+    background-color: #f2f2f2;
+  }
+  
+  option:checked {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .jobopenings-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .card {
+      width: 80%;
+      margin: 10px auto;
+      font-size: 0.7rem;
+    }
+  
+    .charrt-container {
+      width: 90%;
+      margin: 10px auto;
+    }
+  
+    .chart {
+      width: 100%;
+      height: 100px;
+    }
+  
+    table {
+      width: 100%;
+      overflow-x: auto;
+      margin: 0 auto;
+      font-size: 0.7rem;
+    }
+  
+    th, td {
+      padding: 4px;
+      text-align: center;
+    }
+  
+    .exportb, .viewb {
+      padding: 5px 7px;
+      font-size: 0.7rem;
+    }
+  }
+  

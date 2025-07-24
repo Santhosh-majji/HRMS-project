@@ -1,0 +1,197 @@
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(130, 128, 128, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+}
+
+.popup {
+  background: #fff;
+  padding: 20px;
+  width: 400px;
+  border-radius: 8px;
+  position: relative;
+  overflow-y: auto;
+  max-height: 80vh;
+}
+
+.close {
+  position: absolute;
+  top: 0px;
+  right: 10px;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  padding-right: 20px;
+  text-align: left;
+  margin-top: 20px;
+  font-weight: 400;
+}
+
+.form-input,
+.time-inputs,
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.shift-timings {
+  display: flex;
+  flex-direction: column;
+  padding-right: 20px;
+}
+
+.time-inputs {
+  display: flex;
+  margin-top: 20px;
+}
+
+.time-inputs input,
+.time-inputs select {
+  margin-right: 8px;
+  margin-top: 10px;
+}
+
+.time-duration {
+  margin-top: 16px;
+}
+
+.submit-button {
+  background: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 1s;
+  padding-top: 10px;
+}
+
+.submit-button:hover {
+  background-color: white;
+  border: 2px solid #007bff;
+  color: black;
+}
+
+.container {
+  position: relative;
+  /* box-shadow: 0 2px 5px -2px rgba(0, 0, 0, 0.35); */
+  padding: 20px;
+}
+.shift{
+  font-weight: 400;
+}
+.add-button {
+  background: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: 1020px;
+  width: 100px;
+  transition: 1s;
+}
+
+.add-button:hover {
+  background-color: white;
+  border: 2px solid #007bff;
+  color: black;
+}
+.timings {
+  font-size: 20px;
+  font-weight: 500;
+  text-align: left;
+}
+.dot {
+  margin-top: 15px;
+  padding-right: 5px;
+}
+.form-label-1 {
+  margin-top: 8px;
+  margin-right: 10px;
+}
+.form-label-2 {
+  margin-top: 8px;
+  margin-right: 20px;
+}
+
+.break-timings{
+  padding: 10px;
+  margin-right: 10px;
+}
+
+.data-grid {
+  padding: 30px;
+  border-radius: 20px;
+}
+
+.grid-1 {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.data-grid table {
+  width: 100%;
+  border-collapse: collapse;
+  
+}
+
+.data-grid th,
+.data-grid td {
+  border-bottom: 1px solid #ddd; 
+  padding: 8px;
+  text-align: left;
+  padding: 20px;
+}
+
+.data-grid th {
+  background-color: rgb(167, 165, 165);
+}
+
+.actions-menu {
+  position: relative;
+  display: inline-block;
+}
+
+.dots {
+  cursor: pointer;
+}
+
+
+.show {
+  display: block;
+}
+
+
+@media only screen and (max-width: 768px)  {
+ .data-grid{
+  overflow-x: auto;
+  max-width: 100%;
+ }
+ .add-button{
+  margin-left: 200px;
+ }
+ .data-grid th,
+.data-grid td {
+  white-space: nowrap;
+  
+}
+}

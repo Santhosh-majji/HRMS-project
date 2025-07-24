@@ -1,0 +1,575 @@
+/* Reset some basic elements for better styling */
+
+.dashboard-container {
+  display: flex;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-bottom: 1px solid #ccc;
+  color: black;
+}
+
+.header h1 {
+  margin: 0;
+}
+
+.logout-icons {
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.dashboard-content {
+  flex-grow: 1;
+}
+
+.dashboard {
+  padding: 20px;
+}
+
+.summary {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.summary-card {
+  flex: 1;
+  padding: 20px;
+  margin: 10px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.summary-card .card-icon {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.value {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.job-statistics, .employee-info {
+  margin-top: 20px;
+}
+
+.chart-container {
+  height: 400px;
+  margin-bottom: 20px;
+}
+
+.notification-card, .employee-status, .employee-composition {
+  margin-top: 20px;
+}
+
+.notification-wrapper {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.notification-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.notification-body {
+  margin-top: 20px;
+}
+
+.notification-container {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.notification-text {
+  display: flex;
+}
+
+.indicator-wrapper {
+  width: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.indicator {
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  border-radius: 50%;
+}
+
+.notification-messages {
+  margin-left: 10px;
+}
+
+.no-notifications {
+  text-align: center;
+  color: #999;
+  margin-top: 20px;
+}
+
+.notification-footer {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.notification-footer a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.positive {
+  color: green;
+}
+
+
+
+body, html, div, p, h3 {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+}
+
+.dashboard-container {
+  display: flex;
+  flex-direction: row;
+  min-height: 100vh;
+}
+
+.dashboard {
+  flex: 1;
+  padding: 20px;
+  overflow: auto;
+}
+
+.summary {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.summary-card {
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: calc(25% - 20px);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #fff;
+}
+.card-icon{
+  font-size: 25px;
+  margin: 5px;
+}
+.summary-card h3 {
+  font-size: 1.2em;
+  color: #333;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.summary-card .value {
+  font-size: 1.8em;
+  color: #333;
+  margin-bottom: 10px;
+  font-weight: bolder;
+  
+}
+
+.summary-card .change {
+  font-size: 1em;
+  margin-top: auto;
+}
+
+.summary-card .change.positive {
+  color: #4CAF50;
+}
+
+.summary-card .change.negative {
+  color: #E53935;
+}
+
+.job-statistics {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.chart-container {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 65%;
+  height: 400px;
+  box-sizing: border-box;
+  
+}
+
+
+
+.employee-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.employee-status {
+  width: 70%;
+  margin-right: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.employee-status table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.employee-status th, .employee-status td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+  /* font-size: medium; */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.employee-status th {
+  background-color: #f2f2f2;
+  /* font-weight: bold; */
+}
+
+.employee-status td.positive {
+  color: #4CAF50;
+}
+
+.employee-status td.negative {
+  color: #E53935;
+}
+
+.employee-composition {
+  width: 35%;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.employee-composition .chart-container {
+  height: 300px;
+  width: 100%;
+}
+
+.notification-card {
+    width: 420px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background-color: #fff;
+    height: 380px;
+    font-family: 'Arial', sans-serif;
+}
+
+.notification-wrapper {
+    padding: 20px;
+}
+
+.notification-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+.notification-header h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.mark-read {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.mark-read img {
+    width: 20px;
+    margin-right: 5px;
+}
+
+.mark-read a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.notification-body {
+    max-height: 300px;
+    overflow-y: auto;
+    margin-top: 10px;
+}
+
+.notification-container {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.notification-container:hover {
+    background-color: #f9f9f9;
+}
+
+.notification-text {
+    display: flex;
+    width: 100%;
+}
+
+.indicator-wrapper {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.indicator {
+    width: 10px;
+    height: 10px;
+    background-color: #007bff;
+    border-radius: 50%;
+}
+
+.notification-messages {
+    flex: 1;
+}
+
+.notification-messages h4 {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+}
+
+.notification-messages h4 .employee-name {
+    font-weight: bold;
+    color: #007bff;
+}
+
+.notification-messages p {
+    margin: 5px 0 0;
+    color: #555;
+}
+
+.no-notifications {
+    text-align: center;
+    padding: 20px;
+}
+
+.no-notifications img {
+    width: 50px;
+    margin-bottom: 10px;
+}
+
+.notification-footer {
+    text-align: center;
+    padding: 10px 0;
+    border-top: 1px solid #eee;
+}
+
+.notification-footer a {
+    text-decoration: none;
+    color: #007bff;
+}
+.employee-status tbody {
+  display: block;
+  max-height: 250px; /* Adjust as needed */
+  overflow-y: auto;
+  table-layout: auto;
+}
+
+.employee-status tr {
+  display: table;
+  width: 100%;
+  /* table-layout: auto; */
+  table-layout: auto ;
+}
+
+.status {
+  padding: 5px 10px;
+  border-radius: 15px;
+  color: #fff;
+ 
+}
+
+.status.onboarded {
+  background-color: #4caf50;
+}
+
+.status.pending {
+  background-color: #ff9800;
+}
+@media (max-width: 768px) {
+  /* Ensure the main dashboard elements are displayed in block and full width */
+  .dashboard-container,
+  .header,
+  .summary,
+  .summary-card,
+  .job-statistics,
+  .employee-info,
+  .chart-container,
+  .notification-card,
+  .employee-status {
+      display: block;
+      width: 100%;
+      margin: 10;
+      padding: 10px 0;
+  }
+
+  /* Adjust grid layout for summary cards */
+  .summary {
+      grid-template-columns: 1fr; /* Single column on mobile */
+      gap: 10px;
+  }
+
+  /* Improved styling for notifications section */
+  .notification-card {
+      display: block;
+      width: 100%;
+      max-height: 300px; /* Ensures it doesn't take up too much vertical space */
+      overflow-y: auto; /* Vertical scroll for overflow */
+      padding: 10px; /* Add padding for better spacing */
+      box-sizing: border-box; /* Include padding in element's total width */
+  }
+
+  /* Ensure employee stats charts fit and are displayed properly */
+  .employee-composition {
+      display: block;
+      width: 100%; /* Full width */
+      height: auto; /* Adjust height to fit content */
+      padding: 10px; /* Add padding for better spacing */
+      box-sizing: border-box;
+      overflow-x: auto; /* Allow horizontal scrolling if needed */
+  }
+
+  /* Table responsiveness with horizontal scrolling */
+  .employee-status table {
+      display: block;
+      width: 100%; /* Full width on mobile */
+      overflow-x: auto; /* Enable horizontal scrolling */
+      white-space: nowrap; /* Prevent text wrapping */
+      margin: 10px 0; /* Add margin for spacing */
+      padding: 10px; /* Add padding inside table cells */
+  }
+}
+@media (max-width: 768px) {
+  /* Main container adjustments */
+  .dashboard-container {
+      display: block;
+      width: 100%;
+      padding: 15px; /* Add padding around the main container */
+      box-sizing: border-box; /* Ensure padding is included in width */
+  }
+
+  /* Header */
+  .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 15px; /* Even padding for better spacing */
+      margin-bottom: 10px; /* Margin below header */
+  }
+
+  /* Summary cards in block layout */
+  .summary {
+      display: grid;
+      grid-template-columns: 1fr; /* Single column for cards */
+      gap: 15px; /* Space between each card */
+      margin-bottom: 15px; /* Margin below summary section */
+  }
+
+  /* Individual summary card */
+  .summary-card {
+      padding: 10px 15px; /* Padding inside cards */
+      border: 1px solid #ddd; /* Optional border for better separation */
+      box-sizing: border-box;
+  }
+
+  /* Job statistics, employee info, and other main sections */
+  .job-statistics,
+  .employee-info,
+  .chart-container,
+  .notification-card,
+  .employee-status {
+      display: block;
+      width: 100%;
+      margin-bottom: 15px; /* Space below each main section */
+      padding: 10px 15px; /* Internal padding for spacing */
+      box-sizing: border-box;
+  }
+
+  /* Notification section adjustments */
+  .notification-card {
+      max-height: 300px; /* Limit height */
+      overflow-y: auto; /* Allow vertical scroll */
+      padding: 15px; /* Uniform padding */
+      background-color: #f9f9f9; /* Optional background for distinction */
+      border-radius: 8px; /* Rounded corners */
+      box-sizing: border-box;
+  }
+
+  /* Employee stats charts */
+  .chart-container {
+      padding: 15px; /* Consistent padding */
+      margin-bottom: 15px; /* Margin for spacing */
+      border-radius: 8px; /* Rounded edges */
+      background-color: #ffffff; /* Set a background for contrast */
+      overflow-x: auto; /* Allow horizontal scrolling */
+      width: 100%;
+  }
+
+  /* Table in employee status */
+  .employee-status table {
+      display: block;
+      width: 100%; /* Full width for tables */
+      overflow-x: auto; /* Horizontal scroll for overflow */
+      margin: 10px 0; /* Spacing around the table */
+      padding: 10px 0; /* Padding inside cells */
+      border-spacing: 0 10px; /* Space between rows */
+      border-collapse: separate; /* Keep rows spaced apart */
+  }
+
+  /* Adjustments for icons and buttons */
+  .icon-buttons {
+      display: flex;
+      justify-content: flex-end;
+      padding: 10px 15px; /* Padding around icons */
+      margin-bottom: 10px; /* Margin to separate from other elements */
+  }
+}

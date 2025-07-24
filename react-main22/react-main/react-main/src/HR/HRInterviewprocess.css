@@ -1,0 +1,52 @@
+
+/* HRInterviewprocess.css */
+ 
+.interviewnav {
+  width: 100%;
+  background-color: #3498db;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+ 
+.navbar-interview {
+  display: flex;
+  justify-content: center; /* Center items within the navbar */
+  align-items: center;
+  width: 100%;
+  max-width: 1200px; /* Maximum width to prevent excessive spacing */
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+}
+ 
+.navbar-interview.active {
+  opacity: 1;
+}
+ 
+.nav-item {
+  color: #ecf0f1;
+  font-size: 18px;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+  border-radius: 5px;
+  white-space: nowrap; /* Prevent text from wrapping */
+  margin: 0 10px; /* Add margin between items */
+}
+ 
+.nav-item:hover {
+  background-color: #0056b3;
+  color: #ecf0f1;
+}
+ 
+.interview-text {
+  text-decoration: none;
+}
+ 
+.interview-text p {
+  margin: 0;
+  display: inline; /* Ensure p tag does not cause extra line breaks */
+}
+ 
+ 

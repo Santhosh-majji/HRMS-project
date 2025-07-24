@@ -1,0 +1,200 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.app-container {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh; /* Use min-height instead of height */
+  width: 100%;
+  overflow-y: auto; /* Enable vertical scrolling if needed */
+}
+
+.header {
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+.content-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 2px;
+}
+.extra-element{
+  display: flex;
+}
+.schedule-meeting-container, .meeting-details-container, .extra-elements-container, .data-grid-container {
+  width: 48%;
+  box-shadow: #0056b3;
+}
+
+.schedule-meeting-form, .meeting-details, .extra-elements-container {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.data-grid {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  color: #333;
+}
+
+.data-grid table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.data-grid th, .data-grid td {
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+}
+
+.data-grid th {
+  background-color: #f2f2f2;
+  text-align: left;
+  font-weight: bold;
+  color: #333;
+}
+
+.data-grid tr:hover {
+  background-color: #f2f2f2;
+  cursor: pointer;
+  animation: glow 1s ease infinite alternate;
+}
+
+.create-meeting-btn {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.create-meeting-btn:hover {
+  background-color: #0056b3;
+}
+.schedule-meeting-form {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 8px;
+  color: #333;
+}
+
+.schedule-meeting-form h1 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.schedule-meeting-form form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  
+}
+
+.schedule-meeting-form label {
+  font-weight: bold;
+
+  margin-left: 20px;
+}
+
+
+.schedule-meeting-form input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  
+}
+
+.schedule-meeting-form button {
+  grid-column: span 2;
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 30%;
+  margin-left: 150px;
+}
+
+.schedule-meeting-form button:hover {
+  background-color: #0056b3;
+}
+.schedule-meeting-container:hover,
+.extra-elements-container:hover,
+.meeting-details-container:hover,
+.data-grid-container:hover {
+animation: glow 1s ease infinite alternate;
+color: #0e0f0f;
+}
+
+
+@keyframes glow {
+  from {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  to {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  }
+}
+/* ... existing styles ... */
+
+@media screen and (max-width: 600px) {
+  .header {
+    font-size: 16px;
+  }
+
+  .schedule-meeting-container,
+  .extra-elements-container,
+  .meeting-details-container,
+  .data-grid-container {
+    flex: 1 1 100%; /* Full width for smaller screens */
+    margin-bottom: 10px;
+    /* Add margin between containers */
+  }
+
+  .schedule-meeting-form,
+  .extra-elements-container,
+  .meeting-details,
+  .data-grid {
+    margin-bottom: 10px; /* Add margin between these specific containers */
+  }
+
+  .schedule-meeting-form label {
+    margin-left: 0; /* Remove left margin for smaller screens */
+  }
+
+  .schedule-meeting-form button {
+    width: 100%; /* Make the button full width for smaller screens */
+    margin-left: 0; /* Remove left margin for smaller screens */
+  }
+
+  .data-grid th,
+  .data-grid td {
+    font-size: 12px; /* Adjust font size for smaller screens */
+  }
+}
+@media screen and (max-width: 300px){
+.meeting-details,.data-grid{
+height: 100%;
+display: block;
+}
+}

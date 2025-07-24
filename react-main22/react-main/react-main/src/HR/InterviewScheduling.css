@@ -1,0 +1,498 @@
+/* Schedule.css */
+ 
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f8f8; /* Background color for the entire page */
+  }
+ 
+  .schedule-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    color: #333;
+    background-color: #fff; /* Background color for the container */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+ 
+  .header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #3498db;
+    color: #fff;
+  }
+ 
+  .header-left h2 {
+    margin: 0;
+    margin-right: 40px;
+  }
+ 
+  /* Schedule.css */
+ 
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+ 
+.column {
+  flex: 1;
+  margin-right: 16px;
+}
+ 
+.column:last-child {
+  margin-right: 0;
+}
+ 
+h4 {
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+ 
+.small-border {
+  width: 100%;
+  padding: 8px;
+  color: rgb(33, 33, 33);
+  border: 1px solid #ddd;
+  border-radius: 4px;
+ 
+}
+ 
+  .btninterview {
+    padding: 10px;
+    margin-right: 10px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+ 
+  .btn-cancel {
+    background-color: #dc3545;
+  }
+ 
+  .row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    padding: 10px;
+  }
+ 
+  .interviewlabel {
+    margin-right: 10px;
+    width: 20%;
+  }
+ 
+  input,
+  select {
+    margin-bottom: 20px;
+    padding: 8px;
+    width: 100%;
+   
+  }
+ 
+  .row > label {
+    flex-basis: 20%;
+    flex-shrink: 0;
+  }
+ 
+  .online-options,
+  .offline-options {
+    margin-top: 10px;
+    padding: 10px;
+  }
+ 
+  .column {
+    flex: 1;
+    margin-right: 10px;
+    padding: 10px;
+   
+  }
+  .column input{
+    border: #ccc;
+    border: thin;
+  }
+  .raw {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 35px;
+    padding: 10px;
+   
+  }
+ 
+  .raw label {
+    display: flex;
+    margin-right: 10px;
+    width: 20%;
+    color: #7d7b7b; /* Label text color for the "raw" class */
+  }
+ 
+  .raw input,
+  .raw select {
+    margin-bottom: 10px;
+    padding: 8px;
+    width: 100%;
+  }
+ 
+  .raw > label {
+    flex-basis: 20%;
+    flex-shrink: 0;
+  }
+  .header-row,
+.row {
+  margin-bottom: 15px; /* Adjust the margin-bottom as needed */
+}
+ 
+  .row:nth-child(2) {
+    margin-top: -20px; /* Adjust the negative margin-top as needed */
+  }
+  .row:nth-child(3) {
+    margin-top: -40px; /* Adjust the negative margin-top as needed */
+  }
+  .row:nth-child(3),
+.raw {
+  margin-top: -55px; /* Adjust the margin-bottom as needed */
+}
+.liquid {
+  margin-top: -65px; /* Adjust the margin-bottom as needed */
+}
+/* Add or modify these styles in your Schedule.css file */
+.row .column input.small-border {
+  width: 300px; /* Adjust the width as needed */
+  font-size: 16px; /* Adjust the font size as needed */
+  padding: 8px; /* Adjust the padding as needed */
+}
+ 
+/* Add or modify these styles for the select element in the third row */
+.row .column select {
+  width: 100%; /* Adjust the width as needed */
+  font-size: 16px; /* Adjust the font size as needed */
+  padding: 8px; /* Adjust the padding as needed */
+}
+ 
+/* Add or modify these styles for the select element in the fourth row */
+.raw .column select {
+  width: 100%; /* Adjust the width as needed */
+  font-size: 16px; /* Adjust the font size as needed */
+  padding: 8px; /* Adjust the padding as needed */
+}
+ 
+/* Add or modify these styles in your Schedule.css file */
+.raw .column input.small-border {
+  width: 300px; /* Adjust the width as needed */
+  font-size: 16px; /* Adjust the font size as needed */
+  padding: 8px; /* Adjust the padding as needed */
+}
+ 
+  .online-options,
+  .offline-options {
+    margin-top: 10px;
+    padding: 10px;
+  }
+ 
+  .liquid {
+    display: flex;
+    justify-content: space-between;
+  }
+ 
+  .liquid .column {
+    flex: 1;
+    margin-right: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+  }
+ 
+  .liquid .hea {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    /* background-color: #3498db; */
+    color: #1a1919;
+   
+  }
+ 
+  .liquid .hea {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+ 
+  .liquid .btn-invite {
+    padding: 10px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+ 
+  .liquid .btn-invite span {
+    margin-right: 5px;
+  }
+ 
+  .liquid label {
+    margin-bottom: 10px;
+    display: block;
+    color: #333;
+  }
+ 
+  .liquid select {
+    margin-bottom: 20px;
+    padding: 8px;
+    width: 100%;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+ 
+  .liquid select:hover,
+  .liquid select:focus {
+    border-color: #3498db;
+  }
+ 
+ 
+  .btn-invite {
+    padding: 10px;
+    background-color: #3498db; /* Invite Your Team button background color */
+    color: #fff; /* Invite Your Team button text color */
+    border: none;
+    cursor: pointer;
+  }
+ 
+  .btn-select {
+    padding: 10px;
+    background-color: #3498db; /* Select Candidate button background color */
+    color: #fff; /* Select Candidate button text color */
+    border: none;
+    cursor: pointer;
+  }
+  /* Add or modify these styles for input elements in .row and .raw sections */
+ 
+.row input,
+.row select,
+.raw input,
+.raw select {
+  margin-bottom: 20px;
+  padding: 6px; /* Decreased padding */
+  width: 80%;
+  font-size: 14px; /* Adjusted font size */
+}
+ 
+.column select {
+    margin-bottom: 20px;
+    padding: 8px;
+   
+    width: 100%;
+    font-size: 14px;
+    border: 1px solid #ccc; /* Border color */
+    border-radius: 4px; /* Rounded corners */
+    background-color: #fff; /* Background color */
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1); /* Inset box shadow */
+    outline: none; /* Remove the outline */
+    transition: border-color 0.3s ease; /* Transition effect for border color */
+  }
+ 
+  .column select:hover,
+  .column select:focus {
+    border-color: #3498db; /* Border color on hover/focus */
+  }
+ 
+  .small-border {
+    width: 80%; /* Adjust the width as needed */
+    font-size: 14px; /* Adjusted font size */
+    padding: 6px; /* Decreased padding */
+    border-radius: 4px; /* Rounded corners */
+    background-color: #fff; /* Background color */
+    box-shadow: inset 0 3px 3px rgba(0, 0, 0, 0.1); /* Inset box shadow */
+    outline: none; /* Remove the outline */
+    transition: border-color 0.3s ease; /* Transition effect for border color */
+  }
+ 
+.row input:hover{
+ background-color: #f4f5f5;
+}
+.raw input:hover{
+    background-color: #f4f5f5;
+}
+ 
+.column .hea {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    color: #181616;
+  }
+ 
+  .column .hea .left h2 {
+    margin: 0;
+  }
+ 
+  .column .hea .header-right {
+    display: flex;
+    align-items: center;
+  }
+ 
+  .column .hea .header-right button {
+    padding: 10px;
+   
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+ 
+  .column .hea .header-right button span {
+    margin-right: 5px;
+  }
+ 
+  .column .int {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
+ 
+  .column .int .candidate-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+ 
+  .column .int .candidate-item span {
+    flex-grow: 1;
+    margin-right: 10px;
+  }
+ 
+  .column .int .candidate-item svg {
+    font-size: 20px;
+    margin-right: 5px;
+    cursor: pointer;
+  }
+ 
+  .column .int .candidate-item .fa-star {
+    color: #f39c12; /* Star color */
+  }
+ 
+  .column .int .candidate-item .fa-thumbs-up {
+    color: #27ae60; /* Thumbs up color */
+  }
+ 
+  .column .int .candidate-item .fa-thumbs-down {
+    color: #e74c3c; /* Thumbs down color */
+  }
+ 
+  .column .int .candidate-item .fa-times {
+    color: #c0392b; /* Close icon color */
+  }
+ 
+  .interviewer-details {
+    margin-right: 8px;
+  }
+  .icon-container{
+    margin-left: 550px;
+  }
+ 
+  .close-icon {
+    margin-left: 500px;
+  }
+ 
+  .close-icon svg {
+    cursor: pointer;
+    color: red;
+    font-size: 20px; /* Adjust the font size as needed */
+  }
+  .profile-details {
+   
+    align-items: center;
+  }
+ 
+  .profile-icon {
+    margin-right: 8px;
+  }
+ 
+  .profile-icon svg {
+    color: #007BFF;
+    font-size: 24px; /* Adjust the font size as needed */
+  }
+ 
+  .profile-details span {
+    margin-right: 8px;
+    font-weight: bold; /* Adjust the font weight as needed */
+  }
+ 
+  .profile-details p {
+    margin: 0;
+    color: #555; /* Adjust the color as needed */
+  }
+ 
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .row {
+      flex-direction: column;
+    }
+    .liquid{
+        display: block;
+    }
+ 
+    .column {
+      margin-right: 0;
+    }
+  }
+  /* Schedule.css */
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .row,
+    .raw {
+      flex-direction: column;
+    }
+    .column {
+      margin-right: 0;
+    }
+    .header-row,
+    .hea {
+      flex-direction: column;
+    }
+    .header-left h2,
+    .btn {
+      margin-right: 0;
+    }
+    .schedule-container {
+      border-radius: 0;
+    }
+    .raw,
+    .column {
+      margin-bottom: 20px;
+    }
+    .online-options,
+    .offline-options,
+    .int .candidate-item {
+      width: 100%;
+    }
+    .column .hea,
+    .column .int .candidate-item {
+      padding: 15px;
+    }
+    .column .int .candidate-item {
+      font-size: 14px;
+    }
+    .btn-invite {
+      padding: 10px;
+    }
+    .btn-invite span {
+      margin-right: 5px;
+    }
+  }
+ 

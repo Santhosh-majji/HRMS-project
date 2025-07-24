@@ -1,0 +1,316 @@
+/* PerformanceManagement.css */
+.custom-dropdowns-container {
+  display: flex;
+  align-items: center;
+  margin: 20px;
+}
+
+.custom-dropdowns-container > * {
+  margin-right: 20px;
+  
+}
+
+.custom-location-dropdowns,
+.custom-department-dropdowns {
+  display: flex;
+  align-items: center;
+}
+
+.custom-location-dropdowns label,
+.custom-department-dropdowns label {
+  margin-right: 5px;
+  font-size: 18px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  
+}
+
+.custom-location-dropdowns select,
+.custom-department-dropdowns select {
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  height: 40px;
+  width: 150px;
+}
+
+.custom-search-boxs {
+  display: flex;
+  align-items: center;
+}
+
+.custom-search-boxs input[type="text"] {
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  height: 40px;
+}
+
+.custom-search-boxs button {
+  padding: 8px 12px;
+  border-radius: 5px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+.custom-search-boxs button:hover {
+  background-color: #0056b3;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Container styles */
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .offcanvasRightLabel{
+    height: 150px;
+  }
+  /* Add this style to your CSS */
+.custom-close-button {
+  color: #fff; /* Set your desired color */
+  background-color: #f2f5f8; /* Set your desired background color */
+  /* You can add more styling properties as needed */
+}
+
+  /* Navbar styles */
+  .navbar {
+    background-color: #007bff; /* Navbar background color */
+    color: #fff; /* Text color */
+    padding: 10px;
+    text-align: center;
+  }
+  
+  /* Title styles */
+  .Title {
+    font-size: 2rem;
+    text-align: center;
+    color: #333; /* Title text color */
+    margin-top: 20px;
+  }
+
+  .Title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .btn {
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  /* Styles for the additional content when "In Process" button is clicked */
+  .Hom {
+    margin-top: 20px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+    padding-top: 10px;
+  }
+  .Hom:hover{
+    background-color: rgb(228, 228, 225);
+  }
+  
+  /* Styles for the first row */
+  .first-row {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .department-dropdown,
+  .location-dropdown,
+  .start-date,
+  .search-box {
+    margin-right: 20px;
+  }
+ 
+  .location-dropdown{
+    margin-left: 100px;
+  }
+  .start-date{
+   
+    margin-left: 100px;
+  }
+  .search-box{
+    margin-right: 180px;
+    width: 15%;
+    
+  }
+
+  .second-rowss {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 10px;
+    margin-top: 30px; /* Adjust the margin as needed */
+  }
+  
+  .record-count,
+  .download-icon,
+  .select-options-icon {
+    margin-bottom: 20px;
+  }
+  .record-count,
+.download-icon,
+.select-options-icon {
+  font-size: 14px;
+  color: #555;
+  cursor: pointer;
+}
+.download-icon{
+  margin-left: 10px;
+}
+.select-options-icon{
+  margin-left: 10px;
+}
+
+/* Additional styles for record count, download icon, and select options icon */
+.record-count {
+  font-weight: bold;
+}
+.fourth-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #f0f0f0;
+}
+
+.pagination-info {
+  font-size: 14px;
+  color: #555;
+}
+
+.record {
+  font-size: 14px;
+  color: #555;
+}
+.bubble{
+  display: flex;
+}
+.s{
+  margin-left: 2px;
+}
+.bubbles{
+  display: flex;
+ margin-top: 20px;
+}
+.sa{
+  margin-left: 2px;
+  display: flex;
+}
+
+.bubbl{
+  display: flex;
+  margin-top: 20px;
+}
+.as{
+  margin-left: 2px;
+}
+.ip{
+  margin-left: 12px;
+  margin-bottom: 2px;
+}
+.note{
+  margin-top: 20px;
+}
+.su{
+  margin-left: 230px;
+}
+.act{
+  background-color: #fff;
+}
+.task{
+  margin-top: 20px;
+}
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .navbar a {
+      margin: 10px 0;
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    .third-row {
+      overflow-x: auto; /* Enable horizontal scrolling on small screens */
+    }
+    
+    /* Responsive styles for the fourth row (Pagination) */
+    .fourth-row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    .Hom{
+      display: block;
+    }
+    .record,
+    .pagination-info {
+      width: 100%; /* Make each element take full width on small screens */
+      margin-bottom: 10px; /* Add some spacing between elements */
+    }
+    
+    /* Additional styles for record count, download icon, and select options icon */
+    .record-count,
+    .download-icon,
+    .select-options-icon {
+      font-size: 14px;
+      color: #555;
+      cursor: pointer;
+      width: 100%; /* Make each element take full width on small screens */
+      margin-bottom: 10px; /* Add some spacing between elements */
+    }
+    
+    /* Responsive styles for the first row */
+    .first-row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    
+    .department-dropdown,
+    .location-dropdown,
+    .start-date,
+    .search-box {
+      width: 100%; /* Make each element take full width on small screens */
+      margin-bottom: 10px; /* Add some spacing between elements */
+    }
+    
+    /* Responsive styles for the second row */
+    .second-row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    
+    .record-count,
+    .download-icon,
+    .select-options-icon {
+      width: 100%; /* Make each element take full width on small screens */
+      margin-bottom: 10px; /* Add some spacing between elements */
+    }
+    
+    /* Responsive styles for the fourth row (Pagination) */
+    .fourth-row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    
+    .record,
+    .pagination-info {
+      width: 100%; /* Make each element take full width on small screens */
+      margin-bottom: 10px; /* Add some spacing between elements */
+    }
+  }

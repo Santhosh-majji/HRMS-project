@@ -1,0 +1,432 @@
+
+/* Main  */  
+
+
+.dropdowns-container {
+  display: flex;
+  align-items: center;
+}
+
+.dropdown-container {
+  margin-right: 20px; /* Add gap between dropdowns */
+}
+.dropdown-container,label{
+  color: black;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  margin: 5px;
+}
+.dropdown {
+  padding: 10px;
+  border-radius: 5px;
+  width: 200px;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  
+}
+
+.search-box input {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-right: 10px; /* Add gap between search box and button */
+  
+}
+
+.search-button {
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.search-button:hover {
+  background-color: #2980b9;
+}
+
+.search-icon {
+  font-size: 1.2rem;
+  margin-right: 15px; /* Add gap between icon and input */
+}
+
+.main-container {
+    grid-area: main;
+    overflow-y: hidden;
+    color: rgba(248, 246, 246, 0.95);
+    margin-bottom: 100px; 
+    display: block;     
+  }
+  .Home {
+    display: flex;
+    margin-bottom: 50px;
+    height: 70px;
+    width: 100%;
+    flex-wrap: wrap; 
+    margin-right: 20%;
+  }
+  .header1{
+margin: -10px;
+}
+    .dropdowns-container {
+      display: flex;
+      align-items: center;
+      flex-grow: 1; /* Allow flex container to grow and take available space */
+      margin-right: 0px;
+  }
+    .location-dropdown,
+    .department-dropdown {
+      margin-right: 20px;
+    }
+    .location-dropdown label,
+    .department-dropdown label {
+      font-size: 16px;
+      color: #333333;
+      margin-right: 10px;
+    }
+   
+    .location-dropdown select,
+  .department-dropdown select {
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 10px;
+    font-size: 16px;
+    color: #333333;
+    width: 200px; /* Set your preferred width for the location dropdown */
+  }
+    /* Search Box and Add Button */
+    .search-box,
+    .add-button {
+      display: flex;
+      align-items: center;
+      margin: 20px;
+ 
+    }
+    .search-box input {
+      padding: 8px;
+      margin-right: -10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      outline: none;
+     
+    }
+    .search-box button {
+      padding: 8px 16px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      outline: none;
+      margin: 10px;
+     
+    }
+    .search-box {
+      flex-grow: 1; /* Allow the search box to grow and occupy the remaining space */
+      margin-right: 20px; /* Add some margin between the dropdowns and the search box */
+    }
+    
+    .search-box input[type="text"] {
+      width: calc(100% - 0px); /* Set the input width to occupy all space except for the width of the button */
+    }
+    
+    .search-box button {
+      width: 100%; /* Set the width of the button */
+    }
+    
+    .search-box button:hover {
+      background-color: #0056b3;
+    }
+    .add-button {
+      cursor: pointer;
+      background: #0dba24; /* Green color */
+      color: #fff; /* White text color */
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      align-items: center;
+      margin-right: 10px;
+      margin-left: 50px;
+      margin-top: 15px;
+      height: 40px; /* Add margin if needed */
+      width: 60%;  
+    }
+    .add-button:hover {
+      background: #c1d2e3; /* Darker green color on hover */
+    }
+    /* Your existing CSS styles */
+ 
+  .button {
+    cursor: pointer;
+    background-color: #4caf50; /* Green color */
+    color: #ffffff; /* White text color */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 50px;
+    margin-left: 230px;
+    margin-top: 20px;
+    width: 80px;
+    height: 40px; /* Add margin if needed */
+   
+  }
+  .button:hover {
+    background-color: #45a049; /* Darker green color on hover */
+  }
+    .popup-container {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: white;
+      padding: 20px;
+      border: 1px solid #ccc;
+      z-index: 999;
+    }
+    .close-button {
+      cursor: pointer;
+      margin-top: 10px;
+      text-align: center;
+      color: #007bff;
+    }
+    /* Your existing CSS styles */
+    .scroll-to-top {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #007bff;
+      color: #fff;
+      border-radius: 50%;
+      padding: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    .scroll-to-top:hover {
+      background-color: #0056b3;
+    }
+    .scroll-to-top-icon {
+      font-size: 24px;
+    }
+    /* Add your other styles below */
+    .popup-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff; /* White background color */
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+    width: 300px; /* Set your preferred width */
+    }
+    .popup-content {
+    margin-bottom: 15px;
+    }
+    .input-group {
+    margin-bottom: 15px;
+    }
+    .input-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333; /* Text color for labels */
+    }
+    input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    }
+    .close-button {
+    cursor: pointer;
+    margin-top: 10px;
+    text-align: center;
+    color: #007bff; /* Blue color for close button */
+    }
+    .close-button:hover {
+    color: #0056b3; /* Darker blue color on hover */
+    }
+    /*Add Attendance details*/
+    .header1 {
+      color: white;
+      padding: 16px;
+      text-align: left;
+      border-bottom: 2px solid #ddd; /* Add a bottom border for separation */
+      box-shadow: 0 0 10px rgba(193, 85, 85, 0.1);
+      background: #3498db;
+      font-size: x-large;
+      margin-bottom: 30px;
+   
+     
+    }
+    
+.main-container{
+  overflow-x: hidden;
+}
+
+    
+   /* Media query for small screens */
+/* Media query for small screens */
+@media (max-width: 768px) {
+  .Home {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .dropdowns-container {
+    display: block; /* Change to block for small screens */
+  }
+
+  .location-dropdown,
+  .department-dropdown,
+  .search-box,
+  .add-button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .location-dropdown,
+  .department-dropdown {
+    margin-right: 0;
+  }
+
+  .search-box {
+    margin-right: 0;
+  }
+
+  .search-box input[type="text"] {
+    width: 100%;
+  }
+
+  .add-button {
+    width: 100%;
+    margin-top: 10px;
+    margin-left: 20px; /* Add margin to separate from other elements */
+  }
+}
+/* Attendance.css */
+
+/* Add spacing between search box and data grid */
+.dropdowns-container {
+  margin-bottom: 20px;
+}
+
+/* Add styles for small screens */
+@media (max-width: 768px) {
+  .custom-dropdowns-container {
+    flex-direction: column;
+    align-items: center;
+  display: block;
+  }
+ 
+  .custom-location-dropdown {
+    margin-bottom: 40px;
+  }
+  .custom-department-dropdown{
+    margin-bottom: 30px;
+  }
+  .custom-search-box{
+    margin-bottom: 30px;
+  }
+  
+  .search-box {
+    margin-top: 10px;
+  }
+  
+  .button {
+    margin-top: 10px;
+  }
+}
+
+/* Add more media queries and adjust styles as needed */
+/* Attendance.css */
+
+/* Media Queries */
+@media only screen and (max-width: 768px) {
+  .main-container {
+    padding: 10px;
+    
+  }
+
+  .header1 {
+    font-size: 20px;
+  }
+
+  .custom-dropdowns-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+
+  .custom-dropdowns-container > * {
+    margin: 0px 0;
+  
+  }
+
+  .custom-location-dropdown,
+  .custom-department-dropdown {
+    max-width: 100%;
+  
+  }
+
+  .custom-search-box {
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
+
+  .custom-search-box input[type="text"] {
+    width: calc(100% - 70px);
+    
+  }
+
+  .button {
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+
+  .scroll-to-top {
+    bottom: 10px;
+    right: 10px;
+  }
+
+  .scroll-to-top-icon {
+    font-size: 24px;
+  }
+}
+
+.pagination {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  color: #000;
+}
+
+.pagination button {
+  padding: 8px 16px;
+  margin: 0 5px;
+  border: none;
+  background-color: #007bff;
+  color: #000;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.pagination button:hover {
+  background-color: #0056b3;
+}
+
+.pagination button:disabled {
+  background-color: #ccc;
+  
+}

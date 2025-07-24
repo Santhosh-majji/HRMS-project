@@ -1,0 +1,33 @@
+.custom-navbars {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #3498db;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  height: 65px;
+  color: black;
+}
+
+.custom-navbars .nav-items {
+  font-weight: bold;
+  font-size: 22px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: black;
+}
+
+.custom-navbars .nav-items:hover {
+  color: #ffffff; /* Change hover color */
+}
+
+.custom-navbars .nav-items.active {
+  color: #ffffff; /* Change active color */
+}
+
+@media screen and (max-width: 768px) {
+  .custom-navbars {
+    flex-direction: column;
+    height: auto;
+  }
+}

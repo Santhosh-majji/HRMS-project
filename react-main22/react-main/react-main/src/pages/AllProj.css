@@ -1,0 +1,203 @@
+                                            /* search box */
+
+/* form.ActiveProjSearch input[type=text] {
+  padding: 5px;
+  font-size: 17px;
+  border: 1px solid rgba(192, 186, 186, 0.35);
+  float: left;
+  
+  border-radius: 5px;
+
+} */
+form.ActiveProjSearch input[type=search] {
+    font-size: 17px;
+    height: 40px;
+  }
+  .clientDropdownToggle::after{
+    margin-left: 30px;
+  
+  }
+  #clientDropdownMenuButton{
+    font-size: 17px;
+  }
+  .clientDropdownOptions{
+    height: 190px;
+    overflow-y: auto;
+    font-size: 15px;
+    max-width: 100px ;
+  }
+  .dropdown-menu{
+    z-index: 900;
+  }
+  .customBorder{
+    width:200px;
+  }
+  /* 
+    .dropdown{
+      display: inline-block;
+      
+    }
+    
+    .dropdown-toggle::after {
+      margin-left: 50px;
+    }
+    .custom-border{
+      width:150px;
+      
+    }
+    .dropdown-menu{
+      z-index: 900;
+    }
+    .clientDropdown{
+      height: 190px;
+      overflow-y: auto;
+      font-size: 15px;
+      max-width: 100px ;
+    }
+   
+    #dropdownMenuButton{
+      font-size: 17px;
+    }
+     */
+    .clientTableHeader th{
+      font-size: smaller;
+      vertical-align: middle;
+      text-wrap:nowrap;
+      background-color: #bbb8ba;
+    }
+    
+    tbody td{
+    font-size: 14px; 
+    /* word-wrap: break-word; */
+    /* text-wrap:nowrap; */
+    word-break:keep-all;
+    } 
+    
+  .actionIcons{
+    letter-spacing: 6px;
+    justify-content: space-evenly;
+    align-items: center !important;
+    border: 1 px solid black;
+  }
+  
+                                                  /* start */
+  .allText p{
+      font-size: 15px;
+      margin-bottom: 15px;
+      /* color: red; */
+  }
+  #createProj{
+      font-size: 15px;
+      padding: 3px 3px; 
+  }
+  .ClientSearch{
+      margin-bottom: 15px;
+  }
+  
+.fa-eye {
+  color: black;
+  font-size: 15px;
+  padding-bottom: 13px;
+  padding-right: 2px;
+}
+  
+  
+                                                /* offcanvas */
+  /* .offcanvas-header{
+      background-color: rgb(202, 200, 200);
+      height: 15px;
+  }
+  .offcanvasRight{
+    width:350px;
+  }
+  .offcanvas-body {
+    font-size: 14px; 
+    line-height: 0; 
+  }
+  
+  .offcanvas-body label,
+  .offcanvas-body input,
+  .offcanvas-body select,
+  .offcanvas-body textarea {
+  
+    font-size: 14px; 
+    line-height: 1.0; 
+  
+  } */
+  
+  @media (max-width: 767px) {
+    #createProj{
+      font-size: 14px;
+      padding: 3px; 
+  }
+  .allText p{
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  .allText h4{
+    font-size: 20px;
+    margin-bottom: 5px;
+
+  }
+  .customBorder{
+    margin-left: 10px;
+    width: 95px;
+  }
+  .clientDropdownToggle::after {
+    margin-left: 20px;
+  }
+  /* form.ActiveProjSearch input[type=text] {
+  width: 100px; 
+  } */
+  .clientProjCodeOffcanvas{
+    margin-left: 1px;
+  
+  }
+  .datesOffcanvas{
+    margin-left: 1px;
+  }
+  .offcanvas-body {
+    line-height: 0; 
+  }
+  
+  .description{
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .offcanvas-body label{
+    font-size: 14px;
+    line-height: 1px;
+  }
+  }
+  
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .customBorder{
+      margin-left: 10px;
+      
+    }
+    .clientProjCodeOffcanvas{
+      margin-left: 1px;
+      margin-right: 1px;
+    
+    }
+    .datesOffcanvas{
+      margin-left: 1px;
+      margin-right: 1px;
+  
+    }
+    .offcanvas-body {
+      line-height: 0; 
+    }
+    
+    .description{
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+    .offcanvas-body label{
+      font-size: 14px;
+      line-height: 10px;
+    }
+    .allText h4{
+      font-size: 23px;
+    }
+  }

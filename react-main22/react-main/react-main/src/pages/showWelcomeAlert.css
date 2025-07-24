@@ -1,0 +1,39 @@
+/* Styling for the Welcome Dialog */
+.welcome-dialog .MuiDialogTitle-root {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 24px;
+    background-color: #6D28D9;
+    color: #fff;
+    border-bottom: 1px solid #5b21b6;
+  }
+  
+  .welcome-dialog .MuiDialogContent-root {
+    padding: 24px;
+    text-align: center;
+  }
+  
+  .dialog-title {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .close-button {
+    color: #fff;
+  }
+  
+  .dialog-content {
+    font-size: 16px;
+  }
+  
+  .MuiButton-root {
+    background-color: #6D28D9;
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  .MuiButton-root:hover {
+    background-color: #5b21b6;
+  }
+  

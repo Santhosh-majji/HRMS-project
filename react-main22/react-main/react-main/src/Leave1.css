@@ -1,0 +1,157 @@
+.tabs-container {
+  width: 100%;
+  margin: auto;
+  height: 30px;
+}
+
+.tabs-list {
+  padding: 10px;
+  display: flex;
+}
+.box1{
+  /* border: 5px solid whitesmoke; */
+  width:100%;
+  display: flex;
+}
+ .tab {
+  margin-right: 10px;
+  padding: 10px;
+  word-spacing: 20px;
+  cursor: pointer;
+   border: none;
+  
+
+
+} 
+
+.tab-panel { 
+  padding: 20px;
+  
+}
+.styled-table{
+  border-collapse: collapse;
+  margin: auto;
+  max-width: 1400px;
+  /* gap: 3rem; */
+  margin-right: 50px;
+ 
+}
+thead{
+  width: 40%;
+}
+.styled-table thead tr{
+  background-color:whitesmoke;
+  color:black;
+  text-align: left;
+  width: 30%;
+}
+
+.styled-table th,
+.styled-table td{
+  padding: 12px 15px;
+  color: black;
+ 
+}
+
+.styled-table tbody tr:nth-of-type(even){
+  background-color: #f3f3f3;
+}
+
+.three{
+border: 3px solid whitesmoke;
+height: 100vh;
+margin-top: -50px;
+}
+/* Leave1.css or your custom styles file */
+.tabs-list {
+  background-color: transparent;
+  padding: 8px; /* Adjust padding as needed */
+  /* Add any other styling you want to modify the appearance */
+}
+
+
+/* Leave1.css or your custom styles file */
+.tab {
+  padding: 8px; /* Adjust padding as needed */
+  margin-right: 10px; /* Add margin between tabs if needed */
+  cursor: pointer;
+  color: #333; /* Set text color */
+  border: 1px solid #ccc; /* Add a border for separation */
+  border-radius: 5px; /* Optional: Add rounded corners */
+}
+
+.tab:hover {
+  background-color: #f0f0f0; /* Change background color on hover */
+}
+
+.tab.active {
+  background-color: #ddd; /* Change background color for active tab */
+}
+ 
+@media screen and (max-width:769px) {
+  .box1{
+    border: 5px solid whitesmoke;
+    width:100%;
+    display: flex;
+  }
+
+  /* .tabs-container {
+    width: 400PX;
+    margin: 5PX 5PX 5PX 5X ;
+  } */
+
+  .three{
+    border: 3px solid whitesmoke;
+    height: 100vh;
+    width: 50px;
+    }
+    .tabs-list{
+      display: flex;
+      flex-wrap: wrap; /* Allows tabs to wrap to the next line if there isn't enough space */
+      justify-content: flex-start;
+      /* gap:1rem; */
+    }
+    @media screen and (max-width: 769px) {
+      .box1 {
+        border: 5px solid whitesmoke;
+        width: 100%;
+        display: flex;
+      }
+    
+      .three {
+        border: 3px solid whitesmoke;
+        height: 100vh;
+        width: 50px;
+      }
+    
+      .tabs-list {
+        display: flex;
+        flex-wrap: wrap; /* Allows tabs to wrap to the next line if there isn't enough space */
+        justify-content: flex-start;
+        gap: 10px; /* Add some space between tabs */
+        padding: 8px; /* Add padding for better spacing */
+      }
+    
+      .tab {
+        padding: 8px; /* Adjust padding as needed */
+        margin-right: 10px; /* Add margin between tabs if needed */
+        cursor: pointer;
+        color: #333; /* Set text color */
+        border: 1px solid #ccc; /* Add a border for separation */
+        border-radius: 5px; /* Optional: Add rounded corners */
+      }
+    
+      .tab:hover {
+        background-color: #f0f0f0; /* Change background color on hover */
+      }
+    
+      .tab.active {
+        background-color: #ddd; /* Change background color for active tab */
+      }
+    
+      .tabs-container {
+        padding: 10px; /* Adjust padding as needed */
+      }
+    }
+    
+} 

@@ -1,0 +1,160 @@
+
+.content {
+    padding: 20px;
+  }
+  
+  .heading-section h2 {
+    font-size: 24px;
+    color: #333333;
+    margin-bottom: 20px;
+  }
+  
+  .heading-section p {
+    font-size: 18px;
+    color: #666666;
+    line-height: 1.5;
+  }
+  
+  .dropdowns-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 0px;
+  }
+  
+  .location-dropdown,
+  .department-dropdown {
+    margin-right: 20px;
+  }
+  
+  .location-dropdown label,
+  .department-dropdown label {
+    font-size: 16px;
+    color: #333333;
+    margin-right: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+  }
+  
+  .location-dropdown select,
+  .department-dropdown select {
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 10px;
+    font-size: 16px;
+    color: #333333;
+    width: 140px;
+  }
+  
+  .search-box {
+    margin-bottom: 20px;
+  }
+  
+  .search-box input[type="text"] {
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333333;
+    width: 120px;
+  }
+  
+  .search-box button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  h1{
+    color: #333333;
+    
+  font-family: Arial, Helvetica, sans-serif;
+  }
+  .data-grid-container {
+    overflow-y: auto;
+    max-height: 400px; 
+  }
+  
+  .data-grid table {
+    width: 100%;
+    border-collapse: collapse;
+    animation: fadeIn 1s ease;
+  }
+  
+  .data-grid th,
+  .data-grid td {
+    padding: 12px;
+    border: none;
+    font-size: 16px;
+    color: #333333;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    font-family:Arial;
+  }
+  
+  .data-grid td button:hover {
+    background-color: #ddd;
+  }
+  
+  .data-grid th {
+    background-color: #ddd;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: large;
+  }
+  
+  .data-grid tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+.data-grid td:nth-child(4) {
+  color: #ffc107; 
+ font-family: Arial, Helvetica, sans-serif;
+ font-weight: bolder;
+}
+
+.data-grid td:nth-child(2) {
+  color: #28a745; 
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-weight: bolder;
+}
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .filter-box {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+  
+  .filter-item {
+    margin-right: 20px;
+  }
+  
+  .filter-item label {
+    margin-left: 5px;
+  }
+  
+  
+  @media screen and (max-width: 768px) {
+    .location-dropdown,
+    .department-dropdown {
+      margin-right: 0;
+      width: 100%;
+    }
+    
+    .filter-item {
+      margin-right: 10px;
+      margin-bottom: 10px;
+    }
+  }
+  

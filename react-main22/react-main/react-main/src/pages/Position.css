@@ -1,0 +1,534 @@
+/* Styles for the applicant ID container */
+.appid-container {
+    margin: 30px 30px 30px 20px; /* Adjust margin bottom as needed */
+}
+
+/* Styles for the label of the applicant ID */
+.appid {
+    /* font-size: 16px;  */
+    margin-right: 10px ; /* Adjust margin right as needed */
+}
+
+/* Styles for the input field of the applicant ID */
+.appidtext {
+    width: 200px; /* Adjust width as needed */
+    padding: 8px; /* Adjust padding as needed */
+    font-size: 16px; /* Adjust font size as needed */
+    margin: 10px;
+}
+.positionPage{
+    margin-left: 80px;
+}
+/* Styles for the view button */
+.viewbutton {
+    padding: 10px 20px; /* Adjust padding as needed */
+    font-size: 16px; /* Adjust font size as needed */
+    background-color: #007bff; /* Change background color as needed */
+    color: white; /* Change text color as needed */
+    border: none;
+    border-radius: 5px; /* Adjust border radius as needed */
+    cursor: pointer;
+}
+
+.viewbutton:hover {
+    background-color: #0056b3; /* Change hover background color as needed */
+}
+
+
+
+/* Styles for the progress tracker */
+.progtrckr {
+    margin-top: -10px;
+    padding: 0;
+    list-style-type: none;
+    height: 250px;
+    width: 900px;
+    border: 10px 10px 1px 1px solid #ccc;
+   
+}
+
+
+
+.progtrckr li {
+    display: inline-block;
+    text-align: center;
+    line-height: 2.5em;
+    position: relative;
+}
+
+.progtrckr li.progtrckr-done {
+    color: black;
+    border: none;
+}
+
+.progtrckr li.progtrckr-todo {
+    color: silver; 
+    border: none;
+}
+
+.progtrckr li:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 5px;
+    background-color: yellowgreen; /* Default line color */
+    z-index: -1;
+    
+}
+
+.progtrckr li:last-child:before {
+    width: 100%;
+    background-color: silver; /* Line color for last two buttons */
+}
+
+.button-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* padding: 50px; */
+    padding: 15px 50px 0px 50px;
+
+}
+
+.button-wrapper button {
+    width: 60px; /* Adjust button width as needed */
+    height: 60px; /* Adjust button height as needed */
+    border-radius: 50%;
+    background-color: white;
+    border: 2px solid silver;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 50px; /* Adjust spacing between buttons */
+}
+
+.button-wrapper button .tick-icon {
+    color: white;
+    background-color: yellowgreen;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.button-wrapper button:hover {
+    background-color: #f2f2f2;
+}
+
+.round-text {
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.star-icons {
+    display: flex;
+}
+
+.star-icon {
+    color: gold;
+    font-size: 12px;
+    margin: 1px; /* Adjust spacing between stars */
+}
+
+
+
+/* Table */
+.dataGridTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.dataGridTable th {
+    background-color: #f2f2f2;
+    color: #333;
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+    font-size: small;
+}
+
+.dataGridTable td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+}
+
+.dataGridTable tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.dataGridTable tbody tr:hover {
+    background-color: #f2f2f2;
+}
+
+.actionIcons  {
+    margin-right: 5px;
+    cursor: pointer;
+}
+FontAwesomeIcon {
+    margin-right: 50px;
+    cursor: pointer;
+}
+.pageNavigations {
+    margin-top: 0px;
+}
+
+.pageNavigations button {
+    padding: 5px 10px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.pageNavigations button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+
+.previous {
+    background-color: rgba(172, 171, 171, 0.558);
+
+    padding: 7px 8px;
+    margin: 2px;
+    border-radius: 5px;
+    border: transparent;
+
+}
+.next {
+    background-color: rgba(172, 171, 171, 0.558);
+    padding: 7px 8px;
+    margin: 2px;
+    border-radius: 5px;
+    border: transparent;
+}
+
+.editPopup h2 {
+    margin-top: -1px;
+    font-size: 24px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+
+}
+
+.editPopup p {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.editPopup button {
+    padding: 8px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 2px;
+}
+
+.editPopup button:hover {
+    background-color: #0056b3;
+}
+
+
+
+
+.editPopupContainer {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+
+}
+
+.editPopup {
+    background-color: white;
+    /* padding: 20px ; */
+    border-radius: 5px;
+    padding: 20px 40px 20px 40px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.editLabelpopup {
+    /* display: block; */
+    margin-right: 5px;
+    display: inline-block; 
+    width: 100px; 
+    font-size: 17px;
+}
+
+.inputBox {
+    /* width: 100%; */
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+    font-size: 15px;
+    margin-left: 10px;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+
+
+
+/* for round popup box */
+
+.roundInfoPopupContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.popup .close-btn {
+    /* position: absolute;
+    top: 37%;
+    right: 40%;
+    */
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 0px 6px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+.forFlex{
+    display: flex;
+    justify-content: space-between;
+
+}
+.popup {
+    background-color: white;
+    padding: 20px 20px 20px 20px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    max-width: 80%;
+    overflow: auto;
+}
+
+.popup h2 {
+    margin-top: 0;
+    font-size: 24px;
+}
+
+.popup p {
+    margin: 10px 0;
+    font-size: 16px;
+}
+/* view popup */
+
+.viewPopupContainer {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    z-index: 2;
+
+   
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+
+}
+.applicantDetailsContainer{
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px 30px 10px 30px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5); /* Add box shadow for better visibility */
+
+}
+
+.applicantDetailsContainer h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.applicantDetailsContainer p {
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.applicantDetailsContainer button {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.applicantDetailsContainer button:hover {
+    background-color: #0056b3;
+}
+
+
+
+
+@media screen and (max-width: 767px) {
+   
+    .editPopup {
+        padding: 0px;
+        width: 270px;
+    }
+    .progtrckr {
+        margin-top: 40px;
+        position: fixed;
+    }
+    
+    .appid-container {
+        margin: 0px;
+        font-size: 17px;
+        padding-top: 25px;
+        position: fixed;
+    }
+    .appid {
+        /* font-size: 16px; */
+        margin-right: 0px;
+    }
+    .appidtext {
+        width: 100px;
+        padding: 8px;
+        font-size: 16px;
+        margin: 10px 5px 10px 5px;
+    }
+    .viewbutton {
+        padding: 10px 12px;
+        font-size: 14px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+
+
+    /* pagenavigation buttons */
+    .pageNavigations {
+        margin-top: 0px;
+        position: fixed;
+    }
+
+    /* edit popup */
+    .editPopup h2 {
+        font-size: 20px;
+    }
+    
+    .editPopup p {
+        font-size: 14px;
+    }
+    
+    .editPopup button {
+        padding: 6px 12px;
+    }
+    
+    .editPopupContainer {
+        padding: 20px;
+    }
+    
+    .editPopup {
+        padding: 15px;
+    }
+    
+    .form-group {
+        margin-bottom: 10px;
+    }
+    
+    .label {
+        margin-right: 3px;
+    }
+    
+    .inputBox {
+        padding: 4px;
+    }
+    
+    .button-group {
+        margin-top: 15px;
+    }
+
+    .applicantDatagrid {
+        overflow-x: scroll;
+    }
+    .dataGridTable{
+        overflow-x: scroll;
+    }
+
+
+    /* progressbar */
+    .button-wrapper button {
+        width: 40px;
+        height: 40px;
+        
+        margin-bottom: 30px;
+    }
+    .button-wrapper {
+        padding: 5px;
+        /* position: fixed; */
+    }
+    .applicantTrack {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    /* .progtrckr {
+         margin-top: 10px;
+    } */
+
+    .dataGridTable {
+        margin-top: 0px;
+        margin-bottom: 2px;
+    }
+    .form-label {
+        margin-top: 0px !important;
+    }
+    /* .col label{
+        width: 100%;
+    } */
+    .row {
+         --bs-gutter-x: 0rem !important;
+    }
+    .projDropdown{
+        margin-right: 5px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .progtrckr {
+        margin-top: 30px;
+        position: fixed;
+    }
+    .button-wrapper {
+        
+        /* padding: 50px; */
+        padding: 15px 40px 0px 40px;
+    }
+}

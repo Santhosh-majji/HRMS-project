@@ -1,0 +1,209 @@
+/* Base styles */
+.main-container {
+  display: flex;
+}
+
+.sidebar {
+  background: #000;
+  color: #fff;
+  height: 100vh;
+  overflow: hidden;
+  position: fixed;
+  transition: width 0.2s, box-shadow 0.3s ease-in-out; /* Added shadow transition */
+  box-shadow: 3px 0 15px rgba(0, 0, 0, 0.3); /* 3D shadow effect */
+  z-index: 1000;
+}
+
+/* Top section */
+.top_section {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+}
+
+.logo {
+  font-size: 24px;
+  margin-left: 10px;
+  transform: perspective(500px) rotateY(10deg); /* 3D effect */
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: perspective(500px) rotateY(0deg); /* On hover, logo becomes flat */
+}
+
+/* Sidebar toggle */
+.bars {
+  margin-left: auto;
+  font-size: 24px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.bars:hover {
+  transform: rotate(90deg); /* Rotate icon on hover */
+}
+
+/* Route links */
+.routes {
+  margin-top: 20px;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: large;
+  position: relative;
+  transition: color 0.2s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.link:hover {
+  background: #444;
+  color: #fff;
+  transform: perspective(500px) rotateY(5deg); /* 3D hover effect */
+}
+
+.link:hover:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #ff4500;
+  transition: width 0.2s ease-in-out;
+}
+
+.link.active {
+  background: #555;
+  position: relative;
+}
+
+.link.active:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #444;
+  transition: width 0.2s ease-in-out;
+}
+
+/* Icon styles */
+.icon {
+  font-size: 22px;
+  margin-right: 10px;
+  transition: transform 0.3s ease;
+}
+
+.link:hover .icon {
+  transform: scale(1.2); /* Icon grows on hover */
+}
+
+/* Text styles */
+.link_text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: color 0.3s ease;
+}
+
+.link:hover .link_text {
+  color: #ff4500; /* Change text color on hover */
+}
+
+/* Sidebar width states */
+.open {
+  margin-left: 200px;
+  transition: margin-left 0.2s, box-shadow 0.3s ease-in-out;
+}
+
+.closed {
+  transition: margin-left 0.2s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Responsive sidebar */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 60px; /* Narrower sidebar on small screens */
+  }
+
+  .open {
+    margin-left: 60px; /* Adjust margin for narrower sidebar */
+  }
+
+  .link_text {
+    display: none; /* Hide text on small screens */
+  }
+}
+
+@media (min-width: 769px) {
+  .sidebar {
+    width: 200px; /* Default width for larger screens */
+  }
+}
+
+/* 3D animation effects */
+@keyframes linkHover {
+  0% {
+    transform: perspective(500px) rotateY(0deg);
+  }
+  50% {
+    transform: perspective(500px) rotateY(10deg);
+  }
+  100% {
+    transform: perspective(500px) rotateY(0deg);
+  }
+}
+
+.link:hover {
+  animation: linkHover 0.6s ease-in-out; /* 3D hover animation */
+}
+
+
+.top_section {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.routes {
+  margin-top: 30px;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  padding: 15px 20px;
+  color: #fff;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.link:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.link.active {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.icon {
+  font-size: 20px;
+  margin-right: 15px;
+}
+
+.link_text {
+  font-size: 16px;
+}

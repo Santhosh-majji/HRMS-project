@@ -1,0 +1,384 @@
+.objectives-container {
+  text-align:left;
+  margin: 10px;
+  overflow: hidden;
+}
+
+.objectives-container h2 {
+  font-size: 20px;
+  font-weight: 300;
+  font-family: 'Arial', sans-serif;
+}
+
+.objectives-container p {
+  font-size: 14px;
+  font-weight: 100;
+  font-family: 'Arial', sans-serif;
+}
+
+.buttons-container {
+  display: flex;
+  flex-direction: row;
+  align-items:center;
+ 
+}
+
+.buttons-container button {
+  background-color: #f0f2f5;
+  color: rgb(43, 41, 41);
+  border: none;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  margin-right: 10px ;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  width: 250px;
+}
+
+.icons{
+  color:rgb(181, 188, 195);
+  padding-right: 10px;
+ 
+}
+
+.buttons-container button:hover {
+  background-color:rgb(14, 151, 205);
+  opacity:50%;
+  color:white;
+}
+
+.buttons-container button:focus {
+  outline: none;
+}
+
+.buttons-container button svg {
+  margin-right: 10px;
+}
+
+.create-objective{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+.create-objective h3{
+  font-size: 20px;
+  font-weight: 200;
+  font-family: 'Arial', sans-serif;
+ }
+
+.create-objective label{
+  margin-left: 670px;
+  font-size: 16px;
+  font-weight: 100;
+  font-family: 'Arial', sans-serif;
+  margin-top: 20px;
+}
+.combo{
+  margin-left: 900px;
+  margin-top: -50px;
+  width: 150px;
+  height: 30px;
+}
+.goal{
+display: flex;
+flex-direction: column;
+width: 70%;
+}
+.goal label{
+  font-size: 16px;
+  font-weight: 100;
+  margin-top: 8px;
+  font-family: 'Arial', sans-serif;
+}
+
+.improve {
+  margin-top: 8px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 700px;
+}
+.adddesc{
+  border: none;
+  color: rgb(14, 151, 205);
+  background-color: white;
+  width: 200px;
+  margin-top: 8px;
+  cursor: pointer;
+  margin-left:-18px ;
+}
+
+.indcombuttons{
+  display: flex;
+  flex-direction: row;
+  align-items:center;
+}
+
+.indcombuttons button{
+  background-color: #f0f2f5;
+  color: rgb(43, 41, 41);
+  border: none;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  margin-right: 10px ;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  width: 250px;
+  margin-top: 8px;
+}
+
+.indcombuttons button:hover {
+  background-color:rgb(14, 151, 205);
+  opacity:20%;
+  color: rgb(14, 151, 205);
+}
+
+.indcombuttons .individual.active {
+  background-color: rgb(14, 151, 205);
+  color: white;
+}
+
+.indcombuttons .company.active {
+  background-color: rgb(14, 151, 205);
+  color: white;
+}
+
+.date-picker-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.date-picker-container label {
+  margin-right: 10px;
+  margin-left: 5px;
+  /* display: flex; */
+  font-size: 16px;
+  color: #333; /* Label text color */
+  width: 50%;
+}
+
+.date-picker {
+  padding: 8px;
+  border-radius: 5px;
+  /* border: 1px solid #ccc; */
+  font-size: 16px;
+  margin-right: 110px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  
+}
+
+/* Style for when the input field is focused */
+.date-picker:focus {
+  outline: none;
+  border-color: #007bff; /* Border color when focused */
+}
+
+
+
+.subgoal{
+  border: none;
+  color: rgb(14, 151, 205);
+  background-color: white;
+  width: 200px;
+  margin-top: 8px;
+  margin-left: 0px;
+  cursor: pointer;
+  text-align: left;
+ width: 90px;
+}
+
+.subgoaldiv{
+  display: flex;
+  flex-direction: column;
+}
+
+.publishbutton{
+  background-color: rgb(14, 151, 205);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-left: 300px;
+  margin-top: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  width: 100px;
+}
+
+
+.data-grid-container {
+  margin-top: 20px;
+}
+
+.data-grid-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.data-grid-table th,
+.data-grid-table td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: center;
+}
+
+.data-grid-table th {
+  background-color: #f0f0f0;
+  font-weight: bold;
+}
+
+.data-grid-table tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.close-button:hover {
+  color: red;
+}
+
+.popup h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.popup p {
+  margin-bottom: 5px;
+}
+
+/* Add this CSS to your Objectives.css file */
+.sub-goal-item {
+margin-top: 8px;
+display: flex;
+align-items: center;
+}
+
+.sub-goal-item input[type="checkbox"] {
+margin-right: 8px;
+}
+
+.popup-content label {
+margin-bottom: 5px;
+}
+
+.save-button {
+background-color: #007bff;
+color: white;
+border: none;
+padding: 10px 20px;
+margin-top: 20px;
+border-radius: 5px;
+font-size: 16px;
+cursor: pointer;
+}
+
+.save-button:hover {
+background-color: #0056b3;
+}
+
+/* Add this CSS to your Objectives.css file */
+.progress-bar {
+width: 100%;
+background-color: #433e46a7;
+border-radius: 5px;
+overflow: hidden;
+}
+
+.progress {
+height: 20px;
+background-color: rgb(14, 151, 205);
+}
+
+/* For screens smaller than 600px */
+@media (max-width: 600px) {
+  .objectives-container {
+    margin: 5px; /* Adjust margin for smaller screens */
+  }
+  
+  .buttons-container {
+    flex-direction: column; /* Stack buttons vertically */
+  }
+
+  .buttons-container button {
+    width: auto; /* Allow buttons to expand to fit content */
+    margin-bottom: 5px; /* Add some space between buttons */
+  }
+
+  .create-objective label {
+    margin-left: 0; /* Reset margin for labels */
+  }
+
+  .combo {
+    margin-left: 0;
+    margin-top: 5px; /* Adjust margin for combo box */
+    width: 100%; /* Make combo box full width */
+  }
+
+  .goal {
+    margin-top: 10px; /* Adjust margin for goal section */
+  }
+
+  .date-picker-container {
+    flex-direction: column; /* Stack date pickers vertically */
+    margin-right: 0; /* Reset margin for date picker container */
+  }
+
+  .date-picker {
+    margin-left: 0; /* Reset margin for date pickers */
+    margin-right: 0;
+    width: 100%; /* Make date pickers full width */
+  }
+
+  .subgoaldiv {
+    margin-top: 10px; /* Adjust margin for subgoal section */
+  }
+
+  .data-grid-table th,
+  .data-grid-table td {
+    font-size: 12px; /* Decrease font size for table cells */
+  }
+}
+
+/* For screens larger than 600px */
+@media (min-width: 601px) {
+  /* Add specific styles for larger screens if needed */
+}

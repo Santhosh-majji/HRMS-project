@@ -1,0 +1,30 @@
+/* InitiateOnboarding.css */
+
+/* Horizontal Bar */
+.horizontal-bar {
+  background-color: #f0f0f0;
+  padding: 10px;
+  display: flex;
+  
+}
+
+.navbar1 {
+  display: flex;
+  gap: 30px;
+  margin: 5px;
+}
+
+.navbar-item1 {
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.navbar-item1.active {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.navbar-item1.active:hover {
+  background-color: #0056b3;
+}

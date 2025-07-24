@@ -1,0 +1,106 @@
+.table-container {
+  margin: 30px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  
+ 
+}
+
+/* Styling for the header row */
+.table-header-row {
+  background-color: #f0f0f0;
+  color: #f0f0f0;
+}
+
+
+/* Styling for the rows */
+.table-row {
+  &:nth-child(even) {
+    background-color: #f0f0f0;
+  }
+  &:hover {
+    background-color: #e0e0e0;
+  }
+}
+
+/* Remove table border and set border-spacing to 0 */
+.data-grid table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  
+}
+/* DataGrid.css */
+
+.edit,
+.delete {
+  padding: 8px;
+  background-color: transparent;
+  color: black;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.edit:hover,
+.delete:hover {
+  color: black;
+  animation: shake 0.5s ease;
+}
+
+
+
+/* Remove borders from table cells */
+.data-grid th,
+.data-grid td {
+  border: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: medium;
+ 
+}
+/* DataGrid.css */
+.icon-button {
+  padding: 0px; /* Adjust padding to decrease the gap */
+  transition: all 0.3s ease;
+}
+
+.icon-button:hover {
+  transform: scale(1.2);
+}
+
+/* Adjust margin between buttons */
+.edit-button {
+  margin-right: 4px;
+  color: black;
+}
+
+.delete-button {
+  margin-right: 4px;
+  color: black;
+}
+
+.refresh-button {
+  margin-right: 4px;
+}
+
+.header-row {
+  background-color: #f0f0f0;
+  color: white;
+}
+/* Datagrid.css */
+
+.datagrid-container {
+  overflow-x: auto;
+  max-width: 100%;
+}
+
+/* Optional: Adjust spacing and alignment as needed */
+.table-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.table-cell {
+  flex: 1 0 100%;
+  padding: 8px;
+  text-align: left;
+}

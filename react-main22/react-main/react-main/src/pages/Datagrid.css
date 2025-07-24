@@ -1,0 +1,35 @@
+/* DataGrid.css */
+
+/* Main container styles */
+.dx-viewport {
+  background: #dcf0f3;
+}
+
+.demo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Button styles */
+.margin-right-5 {
+  margin-right: 5px;
+}
+
+/* Button icon styles */
+.dx-button .dx-icon {
+  color: #1f5490;
+}
+
+/* Row alternate background color */
+.dx-datagrid .dx-row-alt > td {
+  background-color: #e7f2f4;
+}
+
+/* Dark row headings */
+.dx-datagrid .dark-heading {
+  background-color: #f5f5f5;
+  color: #333;
+  font-weight: bold;
+}

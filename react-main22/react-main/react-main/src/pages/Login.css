@@ -1,0 +1,165 @@
+/* Main Container */
+.login-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(to right, #ece9e6, #ffffff); /* Subtle gradient */
+  padding: 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Login Box */
+.login-box {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 40px 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  animation: fadeIn 0.5s ease-out;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.login-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Title */
+.login-title {
+  font-size: 28px;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+}
+
+/* Unique Welcome Message */
+.login-box p:first-of-type {
+  font-size: 18px;
+  font-weight: 700;
+  font-family: 'Courier New', Courier, monospace;
+  color: #e74c3c;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+}
+
+/* Input Container */
+.input-container {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 10px;
+  margin-bottom: 20px;
+  background-color: #f9f9f9;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.input-container:hover {
+  border-color: #3498db;
+  box-shadow: 0 0 8px rgba(52, 152, 219, 0.3);
+}
+
+/* Input Fields */
+.input {
+  width: 100%;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  background: none;
+  padding: 5px 10px;
+  font-family: 'Roboto', sans-serif;
+  color: #2c3e50;
+}
+
+.input:focus {
+  border: none;
+  outline: none;
+}
+
+/* Input Icons */
+.input-icon {
+  color: #7f8c8d;
+  margin-right: 10px;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.input-icon:hover {
+  color: #3498db;
+}
+
+/* Eye Icon for Password */
+.eye-icon {
+  color: #7f8c8d;
+  cursor: pointer;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.eye-icon:hover {
+  color: #3498db;
+  transform: scale(1.2);
+}
+
+/* Button Styling */
+.login-button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #2980b9;
+  color: #ffffff;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.login-button:hover {
+  background-color: #3498db;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.login-button:disabled {
+  background-color: #95a5a6;
+  cursor: not-allowed;
+}
+
+/* Button Icon */
+.login-button-icon {
+  margin-right: 8px;
+  font-size: 20px;
+  transition: transform 0.3s ease;
+}
+
+.login-button:hover .login-button-icon {
+  transform: rotate(360deg);
+}
+
+/* Forgot Password Link */
+.forgot-password {
+  color: #3498db;
+  margin-top: 15px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.forgot-password:hover {
+  color: #1abc9c;
+  transform: scale(1.05);
+}

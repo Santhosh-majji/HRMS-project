@@ -1,0 +1,302 @@
+/* General styles */
+.App {
+    text-align: center;
+    padding: 20px;
+    animation: fadeIn 0.5s ease;
+  }
+   
+  /* Position selection styles */
+  .position-selection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    animation: slideInRight 0.5s ease;
+  }
+   
+  .position-selection select,
+  .position-selection input[type="text"],
+  .position-selection button {
+    margin: 0 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    animation: slideInUp 0.5s ease;
+  }
+   
+  .position-selection select {
+    min-width: 150px;
+  }
+   
+  .position-selection input[type="text"] {
+    min-width: 200px;
+  }
+   
+  .position-selection button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+   
+  .position-selection button:hover {
+    background-color: #0056b3;
+  }
+   
+  /* Generate button styles */
+  .generate-button {
+    margin-bottom: 20px;
+  }
+  .select-all-button {
+    padding: 8px 12px;
+    font-size: 18px;
+    color: #080808;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+   
+  .generate-button button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+   
+  .generate-button button:hover {
+    background-color: #0056b3;
+  }
+   
+  /* Content container styles */
+  .content-container {
+    flex: 1;
+  }
+   
+  .header {
+    background-color: #e0e8f0;
+    color: #191818;
+    text-align: left;
+    padding: 10px;
+  }
+   
+  .header h1 {
+    font-size: 2rem;
+    margin: 0;
+  }
+   
+  /* Add any additional styles or adjustments as needed */
+   
+   
+  /* Data grid styles */
+  .data-grid {
+    margin-bottom: 20px;
+    animation: slideInUp 0.5s ease;
+    overflow-x: auto; /* Add horizontal scroll for small screens */
+  }
+   
+  .data-grid table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+   
+  .data-grid th,
+  .data-grid td {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+   
+  .data-grid th {
+    background-color: #f2f2f2;
+  }
+   
+  /* Offer letter styles */
+  .offer-letter {
+    text-align: left;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    animation: slideInUp 0.5s ease;
+    overflow-x: auto; /* Add horizontal scroll for small screens */
+  }
+   
+  .offer-letter h2 {
+    margin-bottom: 10px;
+  }
+   
+  .offer-content {
+    white-space: pre-line; /* Preserve line breaks */
+  }
+   
+  .button-group {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+   
+  .edit-button,
+  .send-button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+   
+  .edit-button:hover,
+  .send-button:hover {
+    background-color: #0056b3;
+  }
+   
+  /* Success alert styles */
+  .success-alert {
+    background-color: #28a745;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    animation: slideInUp 0.5s ease;
+  }
+  /* Add this style to your Offer.css file or style section */
+  .view-button {
+    padding: 8px 16px;
+    background-color: #007bff; /* Blue color, you can change it */
+    color: #fff; /* White text */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+  }
+   
+  .view-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  .label-checkbox {
+    display: flex;
+    margin-top: 15px;
+    align-items: center;
+    margin-left: 12px;
+  }
+   
+  .label-checkbox input {
+    margin-right: 5px; /* Adjust as needed for spacing */
+  }
+  /* Add these styles in your Offer.css file or wherever you manage your styles */
+   
+  .generate-button {
+    display: flex;
+    margin-top: 20px; /* Adjust as needed */
+  }
+   
+  button {
+    background-color: #4caf50; /* Green background color */
+    color: white; /* White text color */
+    padding: 10px 15px; /* Padding for better appearance */
+    font-size: 16px; /* Adjust font size */
+    cursor: pointer;
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    margin-right: 10px; /* Add some spacing between buttons */
+   
+  }
+   
+  button:hover {
+    background-color: #45a049; /* Darker green on hover */
+  }
+   
+  /* Additional styles for the "Generate Offer Letters" button if needed */
+  .generate-button button {
+    background-color: #007bff; /* Blue background color */
+  }
+   
+  .generate-button button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+   
+  button {
+    background-color: #007bff; /* Green background color */
+    color: white; /* White text color */
+    padding: 10px 15px; /* Padding for better appearance */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Add border-radius for rounded corners */
+    cursor: pointer; /* Add a pointer cursor on hover */
+    margin-right: 5px; /* Add margin to separate buttons */
+  }
+   
+  button:hover {
+    background-color: #007bff; /* Darker green color on hover */
+  }
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+   
+  @keyframes slideInLeft {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+   
+  @keyframes slideInRight {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+   
+  @keyframes slideInUp {
+    from {
+      transform: translateY(100%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+   
+  /* Media queries for responsiveness */
+  @media screen and (max-width: 768px) {
+    .position-selection {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+   
+    .position-selection select,
+    .position-selection input[type="text"],
+    .position-selection button {
+      margin: 10px 0;
+    }
+   
+    .generate-button,
+    .position-selection {
+      margin-bottom: 20px;
+    }
+   
+    .button-group {
+      flex-direction: column;
+    }
+   
+    .edit-button,
+    .send-button {
+      margin: 10px 0;
+    }
+  }

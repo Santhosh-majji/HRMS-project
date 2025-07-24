@@ -1,0 +1,257 @@
+/* PerformanceManagement.css */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Container styles */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.offcanvasRightLabel{
+  height: 150px;
+}
+/* Add this style to your CSS */
+.custom-close-button {
+  color: #fff; /* Set your desired color */
+  background-color: #f2f5f8; /* Set your desired background color */
+  /* You can add more styling properties as needed */
+}
+
+/* Navbar styles */
+.navbar {
+  background-color: #007bff; /* Navbar background color */
+  color: #fff; /* Text color */
+  padding: 10px;
+  text-align: center;
+}
+
+/* Title styles */
+.Title {
+  font-size: 2rem;
+  text-align: center;
+  color: #333; /* Title text color */
+  margin-top: 20px;
+}
+.Title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.btn {
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+/* Styles for the additional content when "In Process" button is clicked */
+.UpdatedHom {
+  margin-top: 20px;
+  padding-bottom: 130px;
+  padding-left: 20px;
+  padding-top: 10px;
+
+}
+.UpdatedHom:hover{
+  background-color: rgb(228, 228, 225);
+}
+
+/* Styles for the first row */
+.UpdatedFirstRow {
+  display: flex;
+  justify-content: space-between;
+}
+
+.UpdatedDepartmentDropdowns,
+.UpdatedLocationDropdowns,
+.UpdatedStartDates,
+.UpdatedSearchBoxs {
+  margin-right: 20px;
+  display: flex;
+}
+.UpdatedLocationDropdowns{
+  margin-left: 100px;
+}
+.UpdatedStartDates{
+  margin-left: 100px;
+}
+.UpdatedSearchBoxs{
+  margin-right: 180px;
+  width: 15%;
+}
+
+/* Styles for the second row */
+.UpdatedSecondRowss {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: 10px;
+  margin-top: 30px; /* Adjust the margin as needed */
+}
+
+.UpdatedRecordCount,
+.UpdatedDownloadIcon,
+.UpdatedSelectOptionsIcon {
+  margin-bottom: 20px;
+}
+.UpdatedRecordCount,
+.UpdatedDownloadIcon,
+.UpdatedSelectOptionsIcon {
+  font-size: 14px;
+  color: #555;
+  cursor: pointer;
+}
+.UpdatedDownloadIcon{
+  margin-left: 10px;
+}
+.UpdatedSelectOptionsIcon{
+  margin-left: 10px;
+}
+
+/* Additional styles for record count, download icon, and select options icon */
+.UpdatedRecordCount {
+  font-weight: bold;
+}
+.UpdatedFourthRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #f0f0f0;
+}
+
+.UpdatedPaginationInfo {
+  font-size: 14px;
+  color: #555;
+}
+
+.UpdatedRecord {
+  font-size: 14px;
+  color: #555;
+}
+.UpdatedBubble{
+  display: flex;
+}
+.UpdatedS{
+  margin-left: 2px;
+}
+.UpdatedBubbles{
+  display: flex;
+ margin-top: 20px;
+}
+.UpdatedSa{
+  margin-left: 2px;
+  display: flex;
+}
+
+.UpdatedBubbl{
+  display: flex;
+  margin-top: 20px;
+}
+.UpdatedAs{
+  margin-left: 2px;
+}
+.UpdatedIp{
+  margin-left: 12px;
+  margin-bottom: 2px;
+}
+.UpdatedNote{
+  margin-top: 20px;
+}
+.UpdatedSu{
+  margin-left: 230px;
+}
+.UpdatedAct{
+  background-color: #fff;
+}
+.UpdatedTask{
+  margin-top: 20px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar a {
+    margin: 10px 0;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .third-row {
+    overflow-x: auto; /* Enable horizontal scrolling on small screens */
+  }
+
+  /* Responsive styles for the fourth row (Pagination) */
+  .UpdatedFourthRow {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .UpdatedHom{
+    display: block;
+  }
+  .UpdatedRecord,
+  .UpdatedPaginationInfo {
+    width: 100%; /* Make each element take full width on small screens */
+    margin-bottom: 10px; /* Add some spacing between elements */
+  }
+
+  /* Additional styles for record count, download icon, and select options icon */
+  .UpdatedRecordCount,
+  .UpdatedDownloadIcon,
+  .UpdatedSelectOptionsIcon {
+    font-size: 14px;
+    color: #555;
+    cursor: pointer;
+    width: 100%; /* Make each element take full width on small screens */
+    margin-bottom: 10px; /* Add some spacing between elements */
+  }
+
+  /* Responsive styles for the first row */
+  .UpdatedFirstRow {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .UpdatedDepartmentDropdown,
+  .UpdatedLocationDropdown,
+  .UpdatedStartDate,
+  .UpdatedSearchBox {
+    width: 100%; /* Make each element take full width on small screens */
+    margin-bottom: 10px; /* Add some spacing between elements */
+  }
+
+  /* Responsive styles for the second row */
+  .UpdatedSecondRow {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .UpdatedRecordCount,
+  .UpdatedDownloadIcon,
+  .UpdatedSelectOptionsIcon {
+    width: 100%; /* Make each element take full width on small screens */
+    margin-bottom: 10px; /* Add some spacing between elements */
+  }
+
+  /* Responsive styles for the fourth row (Pagination) */
+  .UpdatedFourthRow {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .UpdatedRecord,
+  .UpdatedPaginationInfo {
+    width: 100%; /* Make each element take full width on small screens */
+    margin-bottom: 10px; /* Add some spacing between elements */
+  }
+}

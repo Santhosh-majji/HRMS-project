@@ -1,0 +1,80 @@
+.performance-container {
+    padding: 2rem 0;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .performance-card {
+    transition: transform 0.3s, box-shadow 0.3s;
+    border-radius: 10px;
+  }
+  
+  .performance-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .performance-metric {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .performance-metric .MuiTypography-body1,
+  .performance-metric .MuiTypography-body2 {
+    margin-left: 0.5rem;
+    font-weight: 500;
+  }
+  
+  .performance-comments {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    margin-top: 1.5rem;
+  }
+  
+  .performance-comments .comments-text {
+    margin-left: 0.5rem;
+    font-weight: bold;
+  }
+  
+  .MuiLinearProgress-root {
+    width: 100%;
+    margin-left: 0.5rem;
+  }
+  
+  .performance-card .MuiCardHeader-root {
+    background-color: #f5f5f5;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 16px 24px;
+  }
+  
+  .performance-card .MuiCardContent-root {
+    padding: 2rem;
+  }
+  
+  .star {
+    font-size: 24px;
+    color: #e0e0e0;
+    transition: color 0.3s;
+    animation: star-animation 0.5s ease-in-out;
+  }
+  
+  .star.filled {
+    color: #FFD700;
+    transition: color 0.3s;
+  }
+  
+  @keyframes star-animation {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  

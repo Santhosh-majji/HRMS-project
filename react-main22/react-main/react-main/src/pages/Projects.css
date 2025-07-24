@@ -1,0 +1,81 @@
+.project-navbar-title{
+    text-align: center;
+    margin-bottom: 0px;
+    /* position: fixed; */
+    z-index: 1000;
+   
+     /* width: 95%; */
+     width: 100%;
+    background-color: rgb(42, 116, 165); /* Add background color to navbar */
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);  */
+    padding-left: 0px;
+    /* margin-left: 35px; */
+    text-align: center;
+  }
+  .project-navbar-title li{
+    padding-top: 10px;
+    list-style-type: none;
+  }
+
+  
+  .content-container {
+    padding-top: 31px; /* Adjust the value based on the height of your fixed navbar */
+  }
+  .project-nav-active{
+    /* background-color: rgb(42, 116, 165); */
+    color: #fff;
+  }
+  
+  ol,
+    ul {
+      padding-left: 0; /* Override default padding */
+    }
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+ 
+  .row>* {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .col-4 {
+    flex: 0 0 auto;
+    width: 25.33333333%;
+  }
+  
+
+.project-navbar-title {
+    margin-bottom: 10px;
+    /* width: 95%; */
+    width: 123%;
+    word-break: break-word;
+    /* text-wrap: wrap; */
+}
+.content-container {
+  padding-top: 61px;
+}
+}
+
+@media only screen and (max-width: 767px) {
+  
+  .row>* {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .col-4 {
+    flex: 0 0 auto;
+    width: 25.33333333%;
+  }
+  
+.project-navbar-title {
+    margin-bottom: 10px;
+    /* width: 95%; */
+    width: 110%;
+    word-break: break-word;
+    /* text-wrap: wrap; */
+    font-size: xx-small;
+}
+.content-container {
+  padding-top: 61px;
+}
+
+}

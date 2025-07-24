@@ -1,0 +1,844 @@
+.tab-content {
+  margin-right: 0; /* Add this line */
+  transition: margin-right 0.3s; /* Add this line */
+}
+
+.show-offcanvas .tab-content { /* Add this block */
+  margin-right: 250px; /* Adjust the width of the sidebar as needed */
+}
+
+
+.employee-profile {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+ 
+.profile-info {
+  display: flex;
+  align-items: flex-start;
+}
+ 
+.profile-pic {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 20px; /* Add margin to separate pic from details */
+  position: relative; /* Positioning for overlay */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add a shadow for depth */
+  transition: transform 0.3s ease-in-out; /* Add transition for smooth scaling */
+}
+
+.profile-pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Stylish overlay for profile pic */
+.profile-pic::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.3s ease-in-out; /* Add transition for smooth fading */
+}
+
+/* Hover effect to reveal overlay */
+.profile-pic:hover::after {
+  opacity: 1; /* Show overlay on hover */
+}
+
+/* Animation for profile pic */
+.profile-pic:hover {
+  transform: scale(1.05); /* Scale up on hover */
+}
+
+ 
+.profile-details1 {
+  display: block;
+  flex-direction: column;
+}
+ 
+.name {
+  color: black;
+  margin-bottom: 10px;
+  font-size: 24px; /* Increase font size */
+  font-weight: bold; /* Make the font bold */
+  text-transform: uppercase; /* Convert text to uppercase */
+  letter-spacing: 2px; /* Add letter spacing for better readability */
+  animation: fadeIn 1s ease-in-out; /* Add fadeIn animation */
+}
+
+/* Define fadeIn animation */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+ 
+.info p {
+  margin: 5px 0;
+  padding: 20px;
+}
+.info{
+  display: flex;
+  padding: 10px;
+  color: #000;
+}
+ 
+.id-card {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: #007bff;
+  margin: 5px 0;
+}
+ 
+.additional-details p {
+  margin: 5px 0;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+.additional-details{
+  display: flex;
+  color: #000;
+  margin-top: 20px;
+}
+.additional-details p svg {
+  margin-right: 5px;
+ 
+}
+ 
+.off-canvas {
+  position: fixed;
+  top: 0;
+  right: 0; 
+  width: 50%; /* Set width to 50% of the viewport */
+  height: 100%;
+  background: linear-gradient(to bottom right, #ffffff, #f0f0f0); /* Gradient background */
+  padding: 20px;
+  box-shadow: -2px 0 4px rgba(0, 0, 0, 0.1); /* Add box shadow */
+  transition: transform 0.3s ease-in-out; /* Transition for smooth animation */
+  transform: translateX(100%); /* Initially off-screen */
+}
+ 
+.off-canvas.active {
+  transform: translateX(0); /* Move into view */
+}
+ 
+.off-canvas-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  color: #000;
+}
+ 
+.off-canvas-content {
+  color: #333;
+}
+ 
+.cancel-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #666;
+}
+ 
+.submit-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+/* Profile.css */
+ 
+.navbar {
+  display: flex;
+  margin: 10px;
+  width: 95%;
+  margin-right: 350px;
+  background-color: #3489db; /* Adjust margin to align with additional details */
+}
+ 
+.nav-items {
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+  color: #333;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 110px;
+  height: 40px;
+ 
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.nav-item.active {
+  font-weight: bold;
+}
+ 
+.tab-content {
+  margin-top: 20px;
+}
+ 
+/* Remove hover effect */
+.nav-item:hover {
+  background-color: #fff;
+}
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+ 
+/* Card styles */
+.cards {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+  width: calc(50% - 20px); /* Two cards per row */
+  margin-right: 20px;
+}
+ 
+.cards h4 {
+  margin-bottom: 10px;
+  color: #333;
+}
+ 
+.cards p {
+  color: #666;
+}
+ 
+/* Edit and save buttons */
+.edit-button,
+.save-button {
+  border: none;
+  background-color: transparent;
+  color: #007bff;
+  cursor: pointer;
+  width: 150px;
+  padding: 5px 10px;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+ 
+.edit-button:hover,
+.save-button:hover {
+  background-color: #eb8686;
+}
+
+ 
+/* Profile.css */
+ 
+/* Profile.css */
+ 
+.employee-profile2 {
+  display: flex;
+  flex-direction: column;
+  width: 100%; /* Make sure it takes up the full width */
+}
+ 
+.profile-content2 {
+  margin-bottom: 20px;
+  width: 1310px; /* Make sure it takes up the full width */
+  color: #000;
+}
+ h3{
+  color: #000;
+ }
+.profile-progress {
+  background-color: #f8f9fa;
+  border: 1px solid #ced4da;
+  padding: 20px;
+  margin-bottom: 20px;
+  width: 100%; /* Make sure it takes up the full width */
+ 
+}
+ 
+.progress-bars {
+  height: 20px;
+  background-color: #dc3545;
+  width: 70%;
+  color: #000;
+}
+.progress-bars,h6{
+  align-items: center;
+
+}
+.profile-details-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.profile-card {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 20px;
+  width: calc(50% - 15px);
+  box-sizing: border-box;
+}
+
+.profile-card h4 {
+  margin-bottom: 10px;
+}
+
+.details {
+  display: flex;
+  justify-content: space-between;
+}
+
+.details-left,
+.details-right {
+  width: 48%;
+}
+
+.details-left p,
+.details-right p {
+  margin-bottom: 5px;
+}
+
+.edit-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.edit-button:hover {
+  background-color: #0056b3;
+}
+
+.edit-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+ .card{
+  width: 100%;
+ }
+.edit-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ 
+.modal-content {
+  background-color: #fff;
+  color: #000;
+  width: 50%;
+  height: 85%;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+ 
+.modal-content h2 {
+  margin-bottom: 20px;
+}
+ 
+.modal-content form {
+  display: flex;
+  flex-direction: column;
+}
+ 
+.modal-content form input {
+  margin-bottom: 10px;
+  padding: 8px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  color: #000;
+}
+ 
+.save-button {
+  background-color: #28a745;
+}
+
+.form-column {
+  display: flex; /* Display form groups in a column */
+  gap: 20px; /* Add some space between form groups */
+}
+
+.form-group {
+  display: flex; /* Display labels and inputs in a row */
+  flex-direction: column; /* Stack labels and inputs vertically */
+}
+
+.form-group label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"] {
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Optional: Add additional styling as needed */
+
+.job-details-container {
+  margin-top: 20px;
+  width: 1250px;
+ 
+}
+ 
+/* Style for the card container */
+.card-container {
+  display: flex;
+  justify-content: space-between;
+}
+ 
+/* Style for the card */
+.card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+ 
+/* Style for the first card (60% width) */
+.card:first-child {
+  flex: 0 0 65%; /* Set the width to 60% */
+}
+ 
+
+.card:last-child {
+  flex: 0 0 35%; 
+}
+ 
+/* Style for the card header */
+.card-header {
+ 
+  color: #000;
+  padding: 10px;
+  text-align: left;
+}
+ 
+/* Style for the card body */
+.card-body {
+  padding: 15px;
+}
+ 
+
+.card-body {
+  min-height: 150px; 
+}
+ 
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+ 
+
+.col-md-6 {
+  flex: 1;
+  margin-right: 10px; 
+}
+ 
+/* Style for the card body */
+.card-body {
+  padding: 15px;
+}
+ 
+/* Style for the strong tag within columns */
+.col-md-6 strong {
+  color: #101111; /* Adjust the color as needed */
+}
+ 
+/* Style for the text content within columns */
+.col-md-6 strong + * {
+  margin-left: 5px; /* Adjust the spacing between strong and text */
+}
+ 
+/* Additional styling for the card body */
+.card-body {
+  /* Adjust the background color as needed */
+   /* Adjust the border color as needed */
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+/* Style for the second row */
+.row:nth-child(2) {
+  margin-top: 20px; 
+}
+ 
+
+.row:nth-child(2) .col-md-6 {
+   
+  color: black; 
+  padding: 10px; /* Padding for the first column */
+  border-radius: 8px; /* Border radius for the first column */
+}
+ 
+/* Style for the second column in the second row */
+.row:nth-child(2) .col-md-6 {
+ /* Background color for the second column */
+  color: black; /* Text color for the second column */
+  padding: 10px; /* Padding for the second column */
+  border-radius: 8px; /* Border radius for the second column */
+}
+ 
+/* Additional styling for the text content in the second row */
+.row:nth-child(2) strong {
+  font-weight: bold; /* Bold font for the strong element */
+  margin-right: 15px; /* Adjust the spacing between strong and text */
+}
+/* Additional styling for the third row columns */
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ 
+  padding: 10px 0; /* Adjust the padding as needed */
+}
+ 
+/* Styling for each column */
+.col-md-6 {
+  width: 48%; /* Giving each column almost half of the width */
+}
+ 
+/* Styling for the text content */
+strong {
+  font-weight: bold; /* Bold font for the strong element */
+  margin-right: 5px; /* Adjust the spacing between strong and text */
+}
+ 
+/* Styling for the date range */
+.date-range {
+  font-style: italic; /* Italicize the date range */
+  color: #555; /* Adjust the color as needed */
+}
+/* Additional styling for the rows and columns */
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+}
+ 
+.col-md-6 {
+  width: 48%;
+}
+ 
+/* Styling for the text content */
+strong {
+  font-weight: bold;
+  margin-right: 5px;
+}
+ 
+/* Add some margin to the card body */
+.card-body {
+  margin: 20px;
+}
+ 
+/* Style the entire card */
+.card-body {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+ 
+/* Add some margin to the card body */
+.card-body {
+  margin: 20px;
+}
+ /* Default styles */
+
+/* Add general styles that apply to all screen sizes */
+
+/* Responsive styles */
+
+/* For smaller screens, adjust layout to better fit smaller viewports */
+
+@media screen and (max-width: 768px) {
+  .employee-profile {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .profile-info {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .profile-pic {
+    width: 150px;
+    height: 150px;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  
+  .profile-details {
+    text-align: center;
+  }
+  
+  .info p {
+    padding: 10px;
+  }
+  
+  .id-card {
+    margin-top: 20px;
+  }
+  
+  .additional-details {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+}
+
+/* For even smaller screens, adjust further */
+
+@media screen and (max-width: 576px) {
+  .profile-pic {
+    width: 120px;
+    height: 120px;
+  }
+  
+  .info p {
+    padding: 5px;
+  }
+  
+  .id-card {
+    margin-top: 10px;
+  }
+}
+
+
+@media screen and (max-width: 992px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-right: 0;
+  }
+  
+  .nav-item {
+    width: auto;
+    margin: 5px;
+  }
+  
+  .tab-content {
+    width: 100%;
+  }
+}
+
+/* For even smaller screens, adjust further */
+
+@media screen and (max-width: 576px) {
+  .nav-item {
+    font-size: 14px;
+  }
+}
+/* Default styles */
+
+/* Add general styles that apply to all screen sizes */
+
+/* Responsive styles */
+
+/* For smaller screens, adjust layout to better fit smaller viewports */
+
+@media screen and (max-width: 992px) {
+  .profile-content {
+    width: 100%;
+  }
+  
+  .job-details-container {
+    width: 100%;
+    flex-direction: column;
+  }
+  
+  .card-container {
+    flex-direction: column;
+  }
+  
+  .card {
+    width: 100%;
+    margin-right: 0;
+  }
+}
+
+/* For even smaller screens, adjust further */
+
+@media screen and (max-width: 576px) {
+  .profile-card {
+    width: 100%;
+  }
+}
+/* Default styles */
+.data-grid-container {
+  overflow-y: auto;
+  max-height: 400px; 
+}
+
+.data-grid table {
+  width: 100%;
+  border-collapse: collapse;
+  animation: fadeIn 1s ease;
+}
+
+.data-grid th,
+.data-grid td {
+  padding: 12px;
+  border: none;
+  font-size: 16px;
+  color: #333333;
+  text-align: center;
+  transition: background-color 0.3s ease;
+  font-family:Arial;
+}
+
+.data-grid td button:hover {
+  background-color: #ddd;
+}
+
+.data-grid th {
+  background-color: #ddd;
+  font-weight: bold;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: large;
+}
+
+.data-grid tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.data-grid td:nth-child(4) {
+color: #ffc107; 
+font-family: Arial, Helvetica, sans-serif;
+font-weight: bolder;
+}
+
+.data-grid td:nth-child(2) {
+color: #28a745; 
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-weight: bolder;
+}
+.edit-icon,
+.delete-icon {
+font-size: 24px; /* Increase icon size */
+transition: color 0.3s;
+margin: 5px; /* Add transition for smooth color change on hover */
+}
+
+.edit-icon:hover {
+color: blue; /* Change color on hover */
+}
+
+.delete-icon:hover {
+color: red; /* Change color on hover */
+}
+
+
+.data-grid {
+  width: 100%; 
+  transition: all 0.3s ease;
+}
+
+.sidebar-closed .data-grid {
+  width: 100%; /* Adjust width to full when sidebar is closed */
+}
+
+@media screen and (max-width: 992px) {
+  /* Adjust the sidebar */
+  .sidebar {
+    position: fixed; /* Keep the sidebar fixed */
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px; /* Set the width of the sidebar */
+    overflow-y: auto; /* Allow sidebar to scroll if content exceeds height */
+    border-right: 1px solid #ccc; /* Add a border to separate sidebar from content */
+  }
+
+  /* Adjust the content area */
+  .content {
+    margin-left: 250px; 
+    width: calc(100% - 250px); 
+    overflow-y: auto; /* Allow content to scroll if needed */
+    padding-left: 15px; /* Add padding to separate content from sidebar */
+  }
+
+  
+  .assets-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    padding-right: 15px; /* Add padding to prevent content from going under the sidebar */
+    margin-left: 250px; /* Match the width of the sidebar */
+  }
+
+  .assets-data-grids {
+    width: 100%;
+    max-height: calc(100vh - 150px); /* Set maximum height for the data grid to fit within the viewport */
+    overflow-y: auto; /* Allow the data grid to scroll if content exceeds height */
+  }
+
+  .asset-item {
+    width: 100%;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+
+  /* Adjust navbar image */
+  .navbar img {
+    margin-left: 250px; /* Match the width of the sidebar */
+  }
+}
+
+/* For even smaller screens, adjust further */
+
+@media screen and (max-width: 576px) {
+  .profile-card {
+    width: 100%;
+  }
+}

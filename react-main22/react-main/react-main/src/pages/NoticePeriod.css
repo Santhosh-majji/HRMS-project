@@ -1,0 +1,149 @@
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+ 
+  /* Notice Period Management Container */
+  .notice-period-management {
+    width: 80%;
+    max-width: 1200px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+  }
+ 
+  .notice-period-management h1 {
+    text-align: center;
+    color: #333333;
+  }
+ 
+  /* Notice Period Form */
+  .notice-period-form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+ 
+  .notice-period-form h2 {
+    color: #4CAF50;
+    margin-bottom: 10px;
+  }
+ 
+  .notice-period-form label {
+    margin-bottom: 10px;
+    color: #333333;
+  }
+ 
+  .notice-period-form input,
+  .notice-period-form select {
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+ 
+  .notice-period-form button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+ 
+  .notice-period-form button:hover {
+    background-color: #45a049;
+  }
+ 
+  /* Notice Period Table */
+  .notice-period-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+ 
+  .notice-period-table th,
+  .notice-period-table td {
+    padding: 12px;
+    border: 1px solid #dddddd;
+    text-align: left;
+  }
+ 
+  .notice-period-table th {
+    background-color: #f2f2f2;
+    color: #333333;
+  }
+ 
+  .notice-period-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+ 
+  .notice-period-table button {
+    padding: 5px 10px;
+    background-color: #2196F3;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+ 
+  .notice-period-table button:hover {
+    background-color: #0b7dda;
+  }
+ 
+  /* Notice Period Details */
+  .notice-period-details {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+    margin-bottom: 20px;
+  }
+ 
+  .notice-period-details h2 {
+    color: #2196F3;
+    margin-bottom: 10px;
+  }
+ 
+  .notice-period-details p {
+    margin: 10px 0;
+    color: #333333;
+  }
+ 
+  .notice-period-details input,
+  .notice-period-details select {
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+ 
+  .notice-period-details button {
+    padding: 10px 20px;
+    background-color: #2196F3;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+ 
+  .notice-period-details button:hover {
+    background-color: #0b7dda;
+  }
+ 

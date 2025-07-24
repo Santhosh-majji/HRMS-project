@@ -1,0 +1,289 @@
+/* General container styles */
+.attendance-container {
+  flex-grow: 1;
+  padding: 20px;
+  background-color: #f4f6f9;
+  border-radius: 8px;
+  margin: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.attendance-header {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: left; 
+  color: #333;
+}
+
+
+.button-container {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+
+.checkin-button, .checkout-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.checkin-button {
+  background-color: #4caf50;
+  color: white;
+}
+
+.checkin-button:hover {
+  background-color: #45a049;
+}
+
+.checkout-button {
+  background-color: #f44336;
+  color: white;
+}
+
+.checkout-button:hover {
+  background-color: #e53935;
+}
+
+
+.attendance-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.attendance-th, .attendance-td {
+  padding: 12px 15px;
+  text-align: left;
+}
+
+.attendance-th {
+  background-color: #f4f6f9;
+  color: #333;
+  font-weight: bold;
+}
+
+.attendance-td {
+  border-bottom: 1px solid #ddd;
+}
+
+.attendance-row:hover {
+  background-color: #f1f1f1;
+}
+
+/* Status styles */
+.attendance-status {
+  color: #4caf50;
+  font-weight: bold;
+}
+
+.attendance-status.incomplete {
+  color: #f44336;
+}
+/* .timer {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 20px;
+} */
+
+
+
+.timer {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  background-color: #f8f9fa;
+  padding: 10px 20px;
+  border-radius: 25px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.timer-icon {
+  margin-right: 10px;
+  font-size: 24px;
+  color: #17a2b8;
+}
+@media (max-width: 768px) {
+  .attendance-layout {
+    flex-direction: column;
+  }
+
+  .button-container {
+    flex-direction: column;
+  }
+
+  .checkin-button, .checkout-button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .attendance-header {
+    font-size: 20px;
+  }
+
+  .attendance-th, .attendance-td {
+    padding: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .attendance-header {
+    font-size: 18px;
+  }
+
+  .checkin-button, .checkout-button {
+    font-size: 14px;
+    padding: 8px 15px;
+  }
+
+  .attendance-th, .attendance-td {
+    font-size: 12px;
+    padding: 6px;
+  }
+}
+
+.search-containers {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.search-boxes {
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 200px;
+}
+
+.search-icons {
+  margin-left: -30px;
+  cursor: pointer;
+  color: #ccc;
+}
+.attendance-row.absent {
+  background-color: #f8d7da; /* Light red background for absent rows */
+  color: #721c24; /* Dark red text for absent rows */
+}
+/* pagination.css */
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  list-style: none;
+  padding: 0;
+}
+
+.page-item {
+  margin: 0 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+.page-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: #007bff;
+  text-decoration: none;
+  background-color: #fff;
+  border: 2px solid #007bff;
+  transition: all 0.3s ease-in-out;
+  font-size: 16px;
+  font-weight: 600;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.page-item:hover .page-link,
+.page-item:focus .page-link {
+  background-color: #007bff;
+  color: #fff;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 123, 255, 0.2);
+}
+
+.page-item.active .page-link {
+  background-color: #007bff;
+  color: white;
+  border-color: #007bff;
+  transform: scale(1.1);
+  box-shadow: 0 8px 16px rgba(0, 123, 255, 0.3);
+}
+
+.page-link:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
+}
+
+/* Adding keyframes for animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.page-item {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+
+.buttons {
+  display: inline-block;
+  font-size: 16px;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  color: white; 
+  margin-left: 10px; 
+}
+
+.buttons:hover {
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+}
+
+.buttons:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(100, 100, 100, 0.2);
+}
+
+.buttons:active {
+  transform: translateY(1px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+
+.buttons.checkin:hover {
+  background-color: #45a049;
+}
+
+.buttons.checkout:hover {
+  background-color: #e53935;
+}
+
+.buttons.request:hover {
+  background-color: #e69500; 
+}

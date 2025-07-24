@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "devextreme": "^23.2.5",
+    "jwt-decode": "^4.0.0",
+    "nodemailer": "^6.9.13",
+    "react-quill": "^2.0.0",
+    "react-router-dom": "^6.23.0"
+  }
+}

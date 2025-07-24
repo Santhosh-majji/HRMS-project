@@ -1,0 +1,139 @@
+/* Skills.css */
+.filters-container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.filter-group {
+  margin-right: 10px;
+}
+
+.filter-group label {
+  margin-right: 5px;
+}
+
+.App {
+  font-family: Arial, sans-serif;
+}
+
+.App-header {
+  background-color: #3489db;
+  padding: 20px;
+  color: white;
+}
+
+.filters {
+  margin-bottom: 20px;
+}
+
+.data-grid {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+th {
+  background-color: #f2f2f2;
+  text-align: left;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.edit-icon, .delete-icon, .view-icon {
+  cursor: pointer;
+  margin-right: 5px;
+}
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.popup-content {
+  max-width: 400px;
+  margin: auto;
+}
+
+/* Add any other styles as needed */
+
+/* Add any other styles as needed */
+
+
+.popup h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.popup label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.popup input {
+  width: calc(100% - 12px);
+  margin-bottom: 10px;
+  padding: 6px;
+  border: 1px solid #ccc;
+}
+
+.popup .buttons {
+  text-align: right;
+}
+
+.popup .buttons button {
+  margin-left: 10px;
+  padding: 8px 20px;
+  cursor: pointer;
+}
+
+.popup .buttons .update-btn {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+}
+
+.popup .buttons .update-btn:hover {
+  background-color: #45a049;
+}
+
+.popup .buttons .cancel-btn {
+  background-color: #f44336;
+  color: white;
+  border: none;
+}
+
+.popup .buttons .cancel-btn:hover {
+  background-color: #da190b;
+}
+@media (max-width: 768px) {
+  .filter-group {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .filter-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  .filter-group select,
+  .filter-group input {
+    width: 100%;
+  }
+}

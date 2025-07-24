@@ -1,0 +1,29 @@
+.snackbar {
+    border-radius: 8px;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .alert {
+    border-radius: 8px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #333; /* Adjust color based on your theme */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .alert-success {
+    background-color: #4caf50;
+  }
+  
+  .alert-error {
+    background-color: #f44336;
+  }
+  
+  .alert-info {
+    background-color: #2196f3;
+  }
+  
+  .alert-warning {
+    background-color: #ff9800;
+  }
+  
