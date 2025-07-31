@@ -2,8 +2,8 @@
   "name": "hrms-fullstack",
   "version": "1.0.0",
   "scripts": {
-    "install-client": "cd client && npm install",
-    "build-client": "cd client && npm run build",
-    "start": "node backend/server.js"
+    "install-client": "cd react-main22/client && npm install",
+    "build-client": "cd react-main22/client && npm run build",
+    "start": "node react-main22/Backend/server.js"
   }
 }
