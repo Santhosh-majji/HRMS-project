@@ -5,7 +5,9 @@ const express = require("express");
 const app = express();
 const mysql = require("mysql2");
 const cors = require("cors");
-const PORT = process.env.PORT || 5001;
+const path = require('path');
+require('dotenv').config();
+const PORT = process.env.PORT || 5000;
 const cookieParser = require("cookie-parser");
 const jwt = require("jsonwebtoken");
 const otpGenerator = require('otp-generator');
@@ -18,11 +20,10 @@ require("moment-timezone");
  
 // Database connection
 const db = mysql.createPool({
-  host: "103.145.50.161",
-  user: "development_Santhosh",
-  password: "Santhosh@123",
-  database: "development_HRMS",
-  // timezone: 'Asia/Kolkata',
+  host: process.env.DB_HOST || "103.145.50.161",
+  user: process.env.DB_USER || "development_Santhosh",
+  password: process.env.DB_PASSWORD || "Santhosh@123",
+  database: process.env.DB_NAME || "development_HRMS",
   connectTimeout: 20000,
 });
 
@@ -104,6 +105,9 @@ const formatTime = (date) => {
 app.use(cookieParser());
 app.use(cors());
 app.use(express.json());
+
+// Serve static files from React build
+app.use(express.static(path.join(__dirname, '../client/build')));
  
  
 app.get('/api/job-stats', (req, res) => {
@@ -231,7 +235,7 @@ app.get('/api/employee-stats', (req, res) => {
  
  
 // Get holidays
-app.get('/holidays', (req, res) => {
+app.get('/api/holidays', (req, res) => {
   const query = "SELECT * FROM Holidays";
   db.query(query, (err, results) => {
     if (err) {
@@ -242,7 +246,7 @@ app.get('/holidays', (req, res) => {
 });
 
 // Add a new holiday
-app.post('/holidays', (req, res) => {
+app.post('/api/holidays', (req, res) => {
   const { Name, Date, Description } = req.body;
   const query = "INSERT INTO Holidays (Name, Date, Description) VALUES (?, ?, ?)";
   db.query(query, [Name, Date, Description], (err, result) => {
@@ -254,7 +258,7 @@ app.post('/holidays', (req, res) => {
 });
 
 // Update a holiday
-app.put('/holidays/:id', (req, res) => {
+app.put('/api/holidays/:id', (req, res) => {
   const { id } = req.params;
   const { Name, Date, Description } = req.body;
   const query = "UPDATE Holidays SET Name = ?, Date = ?, Description = ? WHERE id = ?";
@@ -267,7 +271,7 @@ app.put('/holidays/:id', (req, res) => {
 });
 
 // Delete a holiday
-app.delete('/holidays/:id', (req, res) => {
+app.delete('/api/holidays/:id', (req, res) => {
   const { id } = req.params;
   const query = "DELETE FROM Holidays WHERE id = ?";
   db.query(query, [id], (err, result) => {
@@ -407,12 +411,12 @@ app.post('/login', (req, res) => {
   });
 });
  
-app.post('/logout', (req, res) => {
+app.post('/api/logout', (req, res) => {
   res.clearCookie('token');
   res.json({ success: true, message: 'Logged out successfully' });
 });
  
-app.get("/login/:username", (req, res) => {
+app.get("/api/login/:username", (req, res) => {
   const { username } = req.params;
   const query = 'SELECT * FROM employee_details WHERE EmployeeID = ?';
  
@@ -447,7 +451,7 @@ function verifyToken(req, res, next) {
     });
   }
  
-app.get('/Hr', verifyToken, (req, res) => {
+app.get('/api/Hr', verifyToken, (req, res) => {
   const user = req.user;
   res.json({ success: true, message: `Hello, ${user.username}! You have access to this protected route.` });
 });
@@ -457,12 +461,12 @@ app.get('/Hr', verifyToken, (req, res) => {
 //   res.json({ success: true, message: `Hello, ${user.username}! You have access to this protected route.` });
 // });
  
-app.get('/Admin', verifyToken, (req, res) => {
+app.get('/api/Admin', verifyToken, (req, res) => {
   const user = req.user;
   res.json({ success: true, message: `Hello, ${user.username}! You have access to this protected route.` });
 });
  
-app.get('/Employee', verifyToken, (req, res) => {
+app.get('/api/Employee', verifyToken, (req, res) => {
   const user = req.user;
   res.json({ success: true, message: `Hello, ${user.username}! You have access to this protected route.` });
 });
@@ -515,7 +519,7 @@ app.get('/Employee', verifyToken, (req, res) => {
  
  
 // Route to fetch data from the database where status is 'notinitiated'
-app.get('/employeeData', (req, res) => {
+app.get('/api/employeeData', (req, res) => {
     const query = "SELECT * FROM OnboardingHrms WHERE Status = 'notinitiated'";
     db.query(query, (error, results) => {
         if (error) {
@@ -528,7 +532,7 @@ app.get('/employeeData', (req, res) => {
 });
  
 // Route to initiate onboarding for selected row
-app.post('/initiateOnboarding', (req, res) => {
+app.post('/api/initiateOnboarding', (req, res) => {
     const { id } = req.body;
  
     // Check if id is undefined or null
@@ -550,7 +554,7 @@ app.post('/initiateOnboarding', (req, res) => {
 });
  
 // Route to skip onboarding for selected row
-app.post('/skipOnboarding', (req, res) => {
+app.post('/api/skipOnboarding', (req, res) => {
     const { id } = req.body;
  
     // Check if id is undefined or null
@@ -572,7 +576,7 @@ app.post('/skipOnboarding', (req, res) => {
 });
  
 // Route to cancel onboarding for selected row
-app.post('/cancelOnboarding', (req, res) => {
+app.post('/api/cancelOnboarding', (req, res) => {
     const { id } = req.body;
  
     // Check if id is undefined or null
@@ -5667,6 +5671,11 @@ app.get('/employeeassetdropdown', (req, res) => {
 
 
 
+
+// Catch all handler: send back React's index.html file for any non-API routes
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, '../client/build', 'index.html'));
+});
 
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
