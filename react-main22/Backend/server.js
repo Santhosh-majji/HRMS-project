@@ -105,9 +105,6 @@ const formatTime = (date) => {
 app.use(cookieParser());
 app.use(cors());
 app.use(express.json());
-
-// Serve static files from React build
-app.use(express.static(path.join(__dirname, '../client/build')));
  
  
 app.get('/api/job-stats', (req, res) => {
@@ -5671,6 +5668,9 @@ app.get('/employeeassetdropdown', (req, res) => {
 
 
 
+
+// Serve static files from React build
+app.use(express.static(path.join(__dirname, '../client/build')));
 
 // Catch all handler: send back React's index.html file for any non-API routes
 app.get('*', (req, res) => {
